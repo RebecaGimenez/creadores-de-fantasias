@@ -2182,3 +2182,96 @@ body.pagina-contacto .encabezado-contacto h1 {
     }
 
 }
+
+
+/* ==========================================
+   AJUSTES FINOS CELULAR
+   FONDO - NAVEGACIÓN - TARJETAS
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* FONDOS: recuperar adornos laterales */
+    body.pagina-inicio .fondo-navidad1,
+    body.pagina-categorias .fondo-navidad,
+    body.pagina-contacto .fondo-navidad,
+    body.figuras-grandes .fondo-navidad,
+    body.figuras-chicas .fondo-navidad {
+        width: 94%;
+        left: 3%;
+        object-fit: fill;
+    }
+
+    /* BOTONES TRANSPARENTES DE NAVEGACIÓN */
+
+    body.pagina-inicio .zona-menu-superior,
+    body.pagina-productos-sobres .zona-menu-superior,
+    body.pagina-contacto .zona-menu-superior {
+        position: absolute;
+        top: 0;
+        left: 3%;
+        width: 94%;
+        height: 95px;
+        z-index: 100;
+        pointer-events: none;
+    }
+
+    body.pagina-inicio .zona-menu-superior a,
+    body.pagina-productos-sobres .zona-menu-superior a,
+    body.pagina-contacto .zona-menu-superior a {
+        position: absolute;
+        top: 0;
+        height: 95px;
+        display: block;
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    /* Tres zonas clicables */
+    body.pagina-inicio .zona-menu-superior a:nth-child(1),
+    body.pagina-productos-sobres .zona-menu-superior a:nth-child(1),
+    body.pagina-contacto .zona-menu-superior a:nth-child(1) {
+        left: 55%;
+        width: 13%;
+    }
+
+    body.pagina-inicio .zona-menu-superior a:nth-child(2),
+    body.pagina-productos-sobres .zona-menu-superior a:nth-child(2),
+    body.pagina-contacto .zona-menu-superior a:nth-child(2) {
+        left: 68%;
+        width: 19%;
+    }
+
+    body.pagina-inicio .zona-menu-superior a:nth-child(3),
+    body.pagina-productos-sobres .zona-menu-superior a:nth-child(3),
+    body.pagina-contacto .zona-menu-superior a:nth-child(3) {
+        left: 87%;
+        width: 12%;
+    }
+
+    /* TARJETAS: Nuestras figuras */
+    body.pagina-categorias .tarjetas-productos {
+        width: 84%;
+        margin-top: 28px;
+        gap: 16px;
+    }
+
+    body.pagina-categorias .tarjetas-productos .tarjeta-contacto {
+        padding: 16px 12px;
+    }
+
+    body.pagina-categorias .tarjetas-productos h2 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+
+    body.pagina-categorias .tarjetas-productos p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    body.pagina-categorias .tarjetas-productos .boton-contacto {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+}
