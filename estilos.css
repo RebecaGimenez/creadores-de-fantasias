@@ -1886,144 +1886,52 @@ body.pagina-contacto .encabezado-contacto h1 {
 }
 
 /* =====================================
-   ADAPTACIÓN GENERAL PARA CELULARES
+   AJUSTES FINALES PARA CELULARES
 ===================================== */
 
 @media (max-width: 700px) {
 
-    body {
-        overflow-x: hidden;
-    }
-
-    /* INICIO */
-    .pagina-fondo-navidad .presentacion {
+    /* INICIO: evitar que el fondo se vea maximizado */
+    body.pagina-fondo-navidad .fondo-navidad1 {
         width: 100%;
-        padding: 95px 5% 35px;
-        gap: 15px;
+        height: 100%;
+        object-fit: fill;
+        object-position: center top;
     }
 
-    .pagina-fondo-navidad .presentacion-texto {
-        width: 100%;
-        padding-top: 15px;
-    }
-
-    .pagina-fondo-navidad .presentacion-texto h1 {
-        font-size: clamp(2.2rem, 9vw, 3.2rem);
+    /* NUESTRAS FIGURAS: fondo a tamaño completo */
+    body.pagina-categorias .fondo-navidad {
+        position: absolute;
+        top: 0;
         left: 0;
-        top: 0;
-        line-height: 1.2;
-        margin-bottom: 20px;
-    }
-
-    .pagina-fondo-navidad .presentacion-texto p {
-        font-size: 1rem;
-        line-height: 1.6;
-        padding: 0 5px;
-        margin-bottom: 18px;
-    }
-
-    .pagina-fondo-navidad .presentacion-imagen {
-        width: 85%;
-        padding-top: 10px;
-    }
-
-    .pagina-fondo-navidad .presentacion-imagen img {
         width: 100%;
-        max-width: 300px;
-        top: 0;
+        height: 100%;
+        object-fit: fill;
     }
 
-    /* TÍTULOS DE LAS PÁGINAS */
-    .pagina-productos-sobres .titulo-nuestras-figuras {
-        font-size: clamp(2.2rem, 9vw, 3.2rem);
-        line-height: 1.2;
+    /* NUESTRAS FIGURAS: bajar un poco las tarjetas */
+    body.pagina-categorias .tarjetas-productos {
+        top: 32%;
     }
 
-    /* PÁGINA NUESTRAS FIGURAS */
-    body.pagina-categorias .titulo-nuestras-figuras {
-        top: 125px !important;
-    }
-
-    body.pagina-productos-sobres .tarjetas-productos {
-        top: 28%;
-        left: 5%;
-        width: 90%;
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
-
-    body.pagina-productos-sobres .tarjetas-productos .tarjeta-contacto {
-        padding: 18px 14px;
-    }
-
-    .tarjetas-productos .tarjeta-contacto h2 {
-        font-size: 1.25rem;
-    }
-
-    .tarjetas-productos .tarjeta-contacto p {
-        font-size: 0.95rem;
-    }
-
-    /* FIGURAS GRANDES Y CHICAS */
-    .pagina-productos-sobres .catalogo-figuras {
-        top: 20%;
-        left: 4%;
-        width: 92%;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px;
-    }
-
-    .pagina-productos-sobres .catalogo-figuras .figura {
-        padding: 8px;
-    }
-
-    .pagina-productos-sobres .catalogo-figuras .figura img {
-        width: 100%;
-        height: 115px;
-    }
-
-    .pagina-productos-sobres .catalogo-figuras .figura h2 {
-        font-size: 0.85rem;
-        line-height: 1.3;
-        margin-top: 8px;
-    }
-
-    /* CONTACTO */
-    body.pagina-contacto .contacto {
-        padding: 85px 14px 30px;
-    }
-
-    .pagina-contacto .encabezado-contacto h1 {
-        font-size: 2.5rem;
-        line-height: 1.2;
-    }
-
-    .pagina-contacto .encabezado-contacto p {
-        font-size: 0.95rem;
-        line-height: 1.5;
-    }
-
-    .pagina-contacto .opciones-contacto {
-        gap: 16px;
-        margin: 20px auto;
-    }
-
-    .pagina-contacto .tarjeta-contacto {
-        padding: 20px 16px;
-    }
-
-    .pagina-contacto .tarjeta-contacto h2 {
-        font-size: 1.3rem;
-    }
-
-    .pagina-contacto .tarjeta-contacto p {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        margin-bottom: 18px;
-    }
-
-    .pagina-contacto .boton-contacto {
+    /* CARRITO: más pequeño y abajo */
+    body.pagina-categorias .boton-carrito {
+        margin: -100px auto 25px;
+        left: 0;
+        right: 0;
+        padding: 11px 20px;
         font-size: 0.9rem;
-        padding: 11px 18px;
+        width: fit-content;
+    }
+
+    /* CONTACTO: evitar que el fondo se estire hacia abajo */
+    body.pagina-contacto .fondo-navidad {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
     }
 }
