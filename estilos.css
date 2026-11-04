@@ -2197,9 +2197,11 @@ body.pagina-contacto .encabezado-contacto h1 {
     body.pagina-contacto .fondo-navidad,
     body.figuras-grandes .fondo-navidad,
     body.figuras-chicas .fondo-navidad {
-        width: 94%;
-        left: 3%;
+        width: 97%;
+        left: 1.5%;
+        height: 100%;
         object-fit: fill;
+        object-position: center top;
     }
 
     /* BOTONES TRANSPARENTES DE NAVEGACIÓN */
