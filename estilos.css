@@ -2191,24 +2191,17 @@ body.pagina-contacto .encabezado-contacto h1 {
 
 @media (max-width: 700px) {
 
-    /* INICIO */
-    body.pagina-inicio .fondo-navidad1 {
-        width: 100%;
-        left: 0;
-        height: 100%;
-        object-fit: fill;
-    }
-
-    /* NUESTRAS FIGURAS Y CONTACTO */
+    body.pagina-inicio .fondo-navidad1,
     body.pagina-categorias .fondo-navidad,
     body.pagina-contacto .fondo-navidad,
     body.figuras-grandes .fondo-navidad,
     body.figuras-chicas .fondo-navidad {
+
         width: 100%;
-        left: 0;
         height: 100%;
-        object-fit: fill;
-        object-position: center top;
+        left: 0;
+        object-fit: cover;
+        object-position: center center;
     }
 
 }
@@ -2285,4 +2278,30 @@ body.pagina-contacto .encabezado-contacto h1 {
         padding: 10px 15px;
         font-size: 0.85rem;
     }
-}
+
+   @media (max-width: 700px) {
+
+    body.pagina-categorias .tarjetas-productos {
+        width: 78%;
+        left: 14%;
+        gap: 13px;
+    }
+
+    body.pagina-categorias .tarjetas-productos .tarjeta-contacto {
+        padding: 13px 10px;
+    }
+
+    body.pagina-categorias .tarjetas-productos h2 {
+        font-size: 1.15rem;
+    }
+
+    body.pagina-categorias .tarjetas-productos p {
+        font-size: 0.85rem;
+    }
+
+    body.pagina-categorias .tarjetas-productos .boton-contacto {
+        padding: 9px 12px;
+        font-size: 0.8rem;
+    }
+
+} 
