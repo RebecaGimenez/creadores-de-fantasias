@@ -2190,20 +2190,53 @@ body.pagina-contacto .encabezado-contacto h1 {
 
 @media (max-width: 700px) {
 
-    /* 1. FONDOS GENERALES (Sin deformaciones en ninguna sección) */
+    /* ==========================================
+   CORRECCIÓN FINAL DE FONDO EN CELULARES
+========================================== */
+@media (max-width: 700px) {
+
+    /* Forzamos el contenedor principal para que no expanda nada a lo ancho */
+    body.pagina-inicio,
+    body.pagina-categorias,
+    body.pagina-contacto,
+    body.figuras-grandes,
+    body.figuras-chicas {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Ajuste estricto para los fondos de todas las páginas */
     body.pagina-inicio .fondo-navidad1,
     body.pagina-categorias .fondo-navidad,
     body.pagina-contacto .fondo-navidad,
     body.figuras-grandes .fondo-navidad,
     body.figuras-chicas .fondo-navidad {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
         width: 100% !important;
         height: 100% !important;
-        min-height: 100vh;
-        left: 0 !important;
-        top: 0 !important;
-        object-fit: cover !important;
+        max-width: 100% !important;
+        object-fit: cover !important; /* Evita que la imagen se estire hacia los costados */
         object-position: center top !important;
+        z-index: -1 !important;
     }
+
+    /* Contenedores de página que envuelven el fondo */
+    .marco-pagina,
+    .marco-sobres {
+        position: relative !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: 100vh !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
 
     /* 2. INICIO: Textos e imagen centrados y sin desplazamientos raros */
     body.pagina-inicio .marco-pagina {
@@ -2440,53 +2473,5 @@ body.pagina-contacto .encabezado-contacto h1 {
         z-index: 9999 !important;
         width: auto !important;
         transform: none !important;
-    }
-}
-
-/* ==========================================
-   CORRECCIÓN FINAL DE FONDO EN CELULARES
-========================================== */
-@media (max-width: 700px) {
-
-    /* Forzamos el contenedor principal para que no expanda nada a lo ancho */
-    body.pagina-inicio,
-    body.pagina-categorias,
-    body.pagina-contacto,
-    body.figuras-grandes,
-    body.figuras-chicas {
-        width: 100% !important;
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
-    /* Ajuste estricto para los fondos de todas las páginas */
-    body.pagina-inicio .fondo-navidad1,
-    body.pagina-categorias .fondo-navidad,
-    body.pagina-contacto .fondo-navidad,
-    body.figuras-grandes .fondo-navidad,
-    body.figuras-chicas .fondo-navidad {
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        height: 100% !important;
-        max-width: 100% !important;
-        object-fit: cover !important; /* Evita que la imagen se estire hacia los costados */
-        object-position: center top !important;
-        z-index: -1 !important;
-    }
-
-    /* Contenedores de página que envuelven el fondo */
-    .marco-pagina,
-    .marco-sobres {
-        position: relative !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        min-height: 100vh !important;
-        overflow: hidden !important;
-        margin: 0 !important;
-        padding: 0 !important;
     }
 }
