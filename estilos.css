@@ -2183,7 +2183,6 @@ body.pagina-contacto .encabezado-contacto h1 {
 
 }
 
-
 /* ==========================================
    AJUSTES FINOS CELULAR
    FONDO - NAVEGACIÓN - TARJETAS
@@ -2191,12 +2190,8 @@ body.pagina-contacto .encabezado-contacto h1 {
 
 @media (max-width: 700px) {
 
-    /* FONDOS: recuperar adornos laterales */
-    body.pagina-inicio .fondo-navidad1,
-    body.pagina-categorias .fondo-navidad,
-    body.pagina-contacto .fondo-navidad,
-    body.figuras-grandes .fondo-navidad,
-    body.figuras-chicas .fondo-navidad {
+    /* 1. FONDOS GENERALES (Inicio) */
+    body.pagina-inicio .fondo-navidad1 {
         width: 98%;
         left: 1%;
         height: 99%;
@@ -2204,8 +2199,20 @@ body.pagina-contacto .encabezado-contacto h1 {
         object-position: center top;
     }
 
-    /* BOTONES TRANSPARENTES DE NAVEGACIÓN */
+    /* 2. FONDOS PARA PRODUCTOS Y CONTACTO (Más anchos y bajados) */
+    body.pagina-categorias .fondo-navidad,
+    body.pagina-contacto .fondo-navidad,
+    body.figuras-grandes .fondo-navidad,
+    body.figuras-chicas .fondo-navidad {
+        width: 100%;       /* Se estira completamente a los costados */
+        left: 0%;          /* Remueve el margen lateral para que abarque todo */
+        height: 104%;      /* Se alarga un poquito hacia abajo */
+        top: 15px;         /* Baja sutilmente la posición de la imagen */
+        object-fit: fill;
+        object-position: center top;
+    }
 
+    /* BOTONES TRANSPARENTES DE NAVEGACIÓN */
     body.pagina-inicio .zona-menu-superior,
     body.pagina-productos-sobres .zona-menu-superior,
     body.pagina-contacto .zona-menu-superior {
