@@ -2475,3 +2475,173 @@ body.pagina-contacto .encabezado-contacto h1 {
         transform: none !important;
     }
 }
+
+/* ==========================================
+   AJUSTE ÚNICO Y DEFINITIVO PARA CELULARES
+   (Reemplaza todas las demás media queries al final del archivo)
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* 1. Resetear contenedores y evitar scroll horizontal */
+    body,
+    html,
+    .marco-pagina,
+    .marco-sobres {
+        width: 100% !important;
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: var(--crema) !important;
+    }
+
+    /* 2. Control estricto de las imágenes de fondo en todas las páginas */
+    body.pagina-inicio .fondo-navidad1,
+    body.pagina-categorias .fondo-navidad,
+    body.pagina-contacto .fondo-navidad,
+    body.figuras-grandes .fondo-navidad,
+    body.figuras-chicas .fondo-navidad {
+        position: absolute !important;
+        top: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important; /* Centra perfectamente el fondo sin ensancharlo */
+        width: 100% !important;
+        max-width: 480px !important; /* Limita el ancho máximo para que en celulares no se estire de más */
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center top !important;
+        z-index: -1 !important;
+    }
+
+    /* 3. INICIO: Textos e imagen centrados */
+    body.pagina-inicio .presentacion {
+        width: 100%;
+        min-height: 100vh;
+        padding: 90px 5% 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    body.pagina-inicio .presentacion-texto h1 {
+        font-size: clamp(2.5rem, 9vw, 3.5rem);
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto 12px;
+        text-align: center;
+    }
+
+    body.pagina-inicio .presentacion-imagen {
+        width: 75%;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    body.pagina-inicio .presentacion-imagen img {
+        width: 100%;
+        max-height: 260px;
+        aspect-ratio: 1 / 1;
+        position: static;
+    }
+
+    /* 4. NUESTRAS FIGURAS Y CONTACTO: Títulos y tarjetas compactas */
+    body.pagina-categorias .titulo-nuestras-figuras,
+    body.figuras-grandes .titulo-nuestras-figuras,
+    body.figuras-chicas .titulo-nuestras-figuras {
+        position: relative;
+        top: auto !important;
+        padding: 100px 10px 0;
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    body.pagina-categorias .tarjetas-productos {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin: 20px auto 0;
+        transform: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    body.pagina-contacto .contacto {
+        padding: 85px 15px 35px;
+    }
+
+    body.pagina-contacto .opciones-contacto {
+        flex-direction: column;
+        width: 100%;
+        gap: 14px;
+        margin: 10px auto;
+    }
+
+    body.pagina-contacto .tarjeta-contacto {
+        width: 100%;
+        padding: 16px 12px;
+    }
+
+    /* 5. CATÁLOGOS DE FIGURAS: Dos columnas prolijas */
+    body.figuras-grandes .catalogo-figuras,
+    body.figuras-chicas .catalogo-figuras {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 92%;
+        margin: 20px auto;
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura img,
+    body.figuras-chicas .catalogo-figuras .figura img {
+        height: 130px;
+        object-fit: contain;
+    }
+
+    /* 6. ZONAS DE NAVEGACIÓN SUPERIOR */
+    .zona-menu-superior {
+        position: absolute;
+        top: 0;
+        left: 3%;
+        width: 94%;
+        height: 85px;
+        z-index: 100;
+        pointer-events: none;
+    }
+
+    .zona-menu-superior a {
+        position: absolute;
+        top: 0;
+        height: 85px;
+        display: block;
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    .zona-menu-superior a:nth-child(1) { left: 55%; width: 13%; }
+    .zona-menu-superior a:nth-child(2) { left: 68%; width: 19%; }
+    .zona-menu-superior a:nth-child(3) { left: 87%; width: 12%; }
+
+    /* 7. CARRITO: Fijo abajo a la derecha */
+    .boton-carrito,
+    body.pagina-categorias .boton-carrito {
+        position: fixed !important;
+        bottom: 15px !important;
+        right: 15px !important;
+        left: auto !important;
+        margin: 0 !important;
+        padding: 10px 16px !important;
+        font-size: 0.85rem !important;
+        z-index: 9999 !important;
+        width: auto !important;
+        transform: none !important;
+    }
+}
