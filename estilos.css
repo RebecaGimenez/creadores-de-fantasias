@@ -2305,3 +2305,59 @@ body.pagina-contacto .encabezado-contacto h1 {
     }
 
 } 
+
+/* =====================================
+   AJUSTE GENERAL DE LOS FONDOS NAVIDEÑOS
+===================================== */
+
+.marco-pagina,
+.marco-sobres {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Fondo de inicio */
+.pagina-fondo-navidad .fondo-navidad1 {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    width: 94%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center top;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Fondo de productos y contactos */
+.pagina-productos-sobres .fondo-navidad,
+.pagina-contacto .fondo-navidad {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    width: 94%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center top;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Menús transparentes alineados con el fondo */
+.pagina-fondo-navidad .zona-menu-superior,
+.pagina-productos-sobres .zona-menu-superior,
+.pagina-contacto .zona-menu-superior {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    width: 94%;
+    height: 100px;
+    z-index: 30;
+    pointer-events: none;
+}
+
+.zona-menu-superior a {
+    pointer-events: auto;
+}
