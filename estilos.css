@@ -2005,31 +2005,30 @@ body.pagina-contacto .encabezado-contacto h1 {
 
 @media (max-width: 700px) {
 
-        /* BOTONES TRANSPARENTES - INICIO */
-    body.pagina-inicio .zona-menu-superior {
-        top: 110px !important;
-        left: 0 !important;
-        width: 100% !important;
-        height: 85px !important;
-    }
+        body.pagina-fondo-navidad .zona-menu-superior {
+            top: 110px !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 75px !important;
+        }
 
-    body.pagina-inicio .zona-menu-superior a {
-        left: 12% !important;
-        width: 76% !important;
-        height: 17px !important;
-    }
+        body.pagina-fondo-navidad .zona-menu-superior a {
+            left: 8% !important;
+            width: 84% !important;
+            height: 14px !important;
+        }
 
-    body.pagina-inicio .zona-menu-superior a:nth-child(1) {
-        top: 0 !important;
-    }
+        body.pagina-fondo-navidad .zona-menu-superior a:nth-child(1) {
+            top: 0 !important;
+        }
 
-    body.pagina-inicio .zona-menu-superior a:nth-child(2) {
-        top: 25px !important;
-    }
+        body.pagina-fondo-navidad .zona-menu-superior a:nth-child(2) {
+            top: 22px !important;
+        }
 
-    body.pagina-inicio .zona-menu-superior a:nth-child(3) {
-        top: 50px !important;
-    }
+        body.pagina-fondo-navidad .zona-menu-superior a:nth-child(3) {
+            top: 44px !important;
+        }
 
     /* INICIO - AJUSTES DE CELULAR */
 
@@ -2091,16 +2090,9 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
 /* INICIO - BAJAR PRESENTACIÓN */
     body.pagina-inicio.pagina-fondo-navidad .presentacion {
-        padding-top: 175px !important;
+        padding-top: 200px !important;
     }
 
-    body.pagina-inicio.pagina-fondo-navidad .presentacion-texto {
-        margin-top: 25px !important;
-    }
-
-    body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen {
-        margin-top: 5px !important;
-    }
 
     /* NUESTRAS FIGURAS: SUBIR TÍTULO Y TARJETAS */
     body.pagina-categorias .titulo-nuestras-figuras {
