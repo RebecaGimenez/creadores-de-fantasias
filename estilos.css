@@ -2093,3 +2093,124 @@ body.pagina-contacto .encabezado-contacto h1 {
         margin-top: 7px !important;
     }
 }
+
+/* ==========================================
+   AJUSTE GENERAL DE CELULARES
+   FONDOS, TÍTULOS Y TARJETAS
+========================================== */
+
+@media screen and (max-width: 700px) {
+
+    /* FONDOS: un poco más largos hacia abajo */
+    body.pagina-categorias .fondo-responsive,
+    body.pagina-contacto .fondo-responsive,
+    body.figuras-grandes .fondo-responsive,
+    body.figuras-chicas .fondo-responsive {
+        min-height: calc(100svh + 140px) !important;
+        height: calc(100% + 140px) !important;
+    }
+
+    body.pagina-categorias .fondo-responsive img,
+    body.pagina-contacto .fondo-responsive img,
+    body.figuras-grandes .fondo-responsive img,
+    body.figuras-chicas .fondo-responsive img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: fill !important;
+        object-position: top center !important;
+    }
+
+
+    /* ---------- NUESTRAS FIGURAS ---------- */
+
+    body.pagina-categorias .titulo-nuestras-figuras {
+        padding-top: 145px !important;
+        font-size: 2.3rem !important;
+    }
+
+    body.pagina-categorias .tarjetas-productos {
+        width: 74% !important;
+        margin: 45px auto 0 !important;
+        gap: 13px !important;
+    }
+
+    body.pagina-categorias .tarjetas-productos .tarjeta-contacto {
+        padding: 13px 10px !important;
+    }
+
+    body.pagina-categorias .tarjetas-productos h2 {
+        font-size: 1.1rem !important;
+    }
+
+    body.pagina-categorias .tarjetas-productos p {
+        font-size: 0.82rem !important;
+        line-height: 1.4 !important;
+    }
+
+    body.pagina-categorias .tarjetas-productos .boton-contacto {
+        padding: 8px 12px !important;
+        font-size: 0.8rem !important;
+    }
+
+
+    /* ---------- FIGURAS GRANDES Y CHICAS ---------- */
+
+    body.figuras-grandes .titulo-nuestras-figuras,
+    body.figuras-chicas .titulo-nuestras-figuras {
+        padding-top: 140px !important;
+        font-size: 2.2rem !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras,
+    body.figuras-chicas .catalogo-figuras {
+        width: 86% !important;
+        margin: 38px auto 30px !important;
+        gap: 10px !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura,
+    body.figuras-chicas .catalogo-figuras .figura {
+        padding: 8px !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura img,
+    body.figuras-chicas .catalogo-figuras .figura img {
+        height: 105px !important;
+    }
+
+
+    /* ---------- CONTACTOS ---------- */
+
+    body.pagina-contacto .contacto {
+        padding: 115px 18px 35px !important;
+    }
+
+    body.pagina-contacto .encabezado-contacto h1 {
+        font-size: 2.2rem !important;
+    }
+
+    body.pagina-contacto .encabezado-contacto p {
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
+    }
+
+    body.pagina-contacto .opciones-contacto {
+        width: 92% !important;
+        margin: 25px auto !important;
+        gap: 14px !important;
+    }
+
+    body.pagina-contacto .tarjeta-contacto {
+        padding: 16px 12px !important;
+    }
+
+    body.pagina-contacto .tarjeta-contacto h2 {
+        font-size: 1.25rem !important;
+    }
+
+    body.pagina-contacto .tarjeta-contacto p {
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
+    }
+
+}
