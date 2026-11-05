@@ -2095,42 +2095,70 @@ body.pagina-contacto .encabezado-contacto h1 {
 }
 
 /* ==========================================
-   AJUSTE GENERAL DE CELULARES
-   FONDOS, TÍTULOS Y TARJETAS
+   AJUSTES FINOS PARA CELULARES
 ========================================== */
 
 @media screen and (max-width: 700px) {
 
-    /* FONDOS: un poco más largos hacia abajo */
-    body.pagina-categorias .fondo-responsive,
-    body.pagina-contacto .fondo-responsive,
-    body.figuras-grandes .fondo-responsive,
-    body.figuras-chicas .fondo-responsive {
-        min-height: calc(100svh + 140px) !important;
-        height: calc(100% + 140px) !important;
-    }
-
-    body.pagina-categorias .fondo-responsive img,
-    body.pagina-contacto .fondo-responsive img,
-    body.figuras-grandes .fondo-responsive img,
-    body.figuras-chicas .fondo-responsive img {
+    /* FONDOS: conservar proporciones y alargar apenas */
+    .fondo-responsive {
+        top: 0 !important;
         width: 100% !important;
-        height: 100% !important;
-        object-fit: fill !important;
-        object-position: top center !important;
+        height: auto !important;
+        transform: scaleY(1.025);
+        transform-origin: top center;
+    }
+
+    .fondo-responsive img {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+
+    /* INICIO: fondo un poquito más largo */
+    body.pagina-inicio .fondo-responsive {
+        transform: scaleY(1.035);
+    }
+
+    /* INICIO: bajar título, frase e imagen */
+    body.pagina-inicio .presentacion {
+        padding-top: 145px !important;
+        gap: 28px !important;
+    }
+
+    body.pagina-inicio .presentacion-texto h1 {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    body.pagina-inicio .presentacion-texto p {
+        margin-top: 12px !important;
+        font-size: 0.95rem !important;
+    }
+
+    body.pagina-inicio .presentacion-imagen {
+        margin-top: 15px !important;
+        padding-top: 0 !important;
+        width: 70% !important;
+        max-width: 250px !important;
+    }
+
+    body.pagina-inicio .presentacion-imagen img {
+        width: 100% !important;
+        max-width: 250px !important;
+        height: auto !important;
     }
 
 
-    /* ---------- NUESTRAS FIGURAS ---------- */
-
+    /* NUESTRAS FIGURAS: bajar título y tarjetas */
     body.pagina-categorias .titulo-nuestras-figuras {
         padding-top: 145px !important;
-        font-size: 2.3rem !important;
     }
 
     body.pagina-categorias .tarjetas-productos {
-        width: 74% !important;
-        margin: 45px auto 0 !important;
+        width: 76% !important;
+        margin: 48px auto 0 !important;
         gap: 13px !important;
     }
 
@@ -2138,55 +2166,18 @@ body.pagina-contacto .encabezado-contacto h1 {
         padding: 13px 10px !important;
     }
 
-    body.pagina-categorias .tarjetas-productos h2 {
-        font-size: 1.1rem !important;
-    }
 
-    body.pagina-categorias .tarjetas-productos p {
-        font-size: 0.82rem !important;
-        line-height: 1.4 !important;
-    }
-
-    body.pagina-categorias .tarjetas-productos .boton-contacto {
-        padding: 8px 12px !important;
-        font-size: 0.8rem !important;
-    }
-
-
-    /* ---------- FIGURAS GRANDES Y CHICAS ---------- */
-
-    body.figuras-grandes .titulo-nuestras-figuras,
-    body.figuras-chicas .titulo-nuestras-figuras {
-        padding-top: 140px !important;
-        font-size: 2.2rem !important;
-    }
-
-    body.figuras-grandes .catalogo-figuras,
-    body.figuras-chicas .catalogo-figuras {
-        width: 86% !important;
-        margin: 38px auto 30px !important;
-        gap: 10px !important;
-    }
-
-    body.figuras-grandes .catalogo-figuras .figura,
-    body.figuras-chicas .catalogo-figuras .figura {
-        padding: 8px !important;
-    }
-
-    body.figuras-grandes .catalogo-figuras .figura img,
-    body.figuras-chicas .catalogo-figuras .figura img {
-        height: 105px !important;
-    }
-
-
-    /* ---------- CONTACTOS ---------- */
-
+    /* CONTACTOS: bajar todo y achicar tarjetas */
     body.pagina-contacto .contacto {
-        padding: 115px 18px 35px !important;
+        padding: 120px 20px 35px !important;
+    }
+
+    body.pagina-contacto .encabezado-contacto {
+        margin-bottom: 25px !important;
     }
 
     body.pagina-contacto .encabezado-contacto h1 {
-        font-size: 2.2rem !important;
+        font-size: 2.3rem !important;
     }
 
     body.pagina-contacto .encabezado-contacto p {
@@ -2195,22 +2186,63 @@ body.pagina-contacto .encabezado-contacto h1 {
     }
 
     body.pagina-contacto .opciones-contacto {
-        width: 92% !important;
+        width: 88% !important;
         margin: 25px auto !important;
-        gap: 14px !important;
+        gap: 13px !important;
     }
 
     body.pagina-contacto .tarjeta-contacto {
-        padding: 16px 12px !important;
+        padding: 14px 12px !important;
     }
 
     body.pagina-contacto .tarjeta-contacto h2 {
-        font-size: 1.25rem !important;
+        font-size: 1.2rem !important;
     }
 
     body.pagina-contacto .tarjeta-contacto p {
-        font-size: 0.85rem !important;
+        font-size: 0.82rem !important;
         line-height: 1.4 !important;
+        margin-bottom: 12px !important;
+    }
+
+    body.pagina-contacto .boton-contacto {
+        padding: 9px 14px !important;
+        font-size: 0.82rem !important;
+    }
+
+
+    /* FIGURAS GRANDES Y CHICAS */
+    body.figuras-grandes .titulo-nuestras-figuras,
+    body.figuras-chicas .titulo-nuestras-figuras {
+        padding-top: 140px !important;
+        font-size: 2.2rem !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras,
+    body.figuras-chicas .catalogo-figuras {
+        width: 82% !important;
+        margin: 42px auto 30px !important;
+        gap: 10px !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura,
+    body.figuras-chicas .catalogo-figuras .figura {
+        padding: 7px !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura img,
+    body.figuras-chicas .catalogo-figuras .figura img {
+        height: 95px !important;
+    }
+
+
+    /* NUESTROS PRODUCTOS: solo bajar título y tarjetas */
+    body.pagina-productos-sobres.pagina-categorias .titulo-nuestras-figuras {
+        padding-top: 145px !important;
+    }
+
+    body.pagina-productos-sobres.pagina-categorias .tarjetas-productos {
+        margin-top: 42px !important;
     }
 
 }
