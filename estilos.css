@@ -2044,3 +2044,52 @@ body.pagina-contacto .encabezado-contacto h1 {
         object-fit: contain !important;
     }
 }
+
+/* =====================================
+   FIGURAS GRANDES Y CHICAS - CELULAR
+===================================== */
+
+@media screen and (max-width: 700px) {
+
+    /* Fondo: un poquito más abajo */
+    body.figuras-grandes .fondo-responsive,
+    body.figuras-chicas .fondo-responsive {
+        top: 12px !important;
+    }
+
+    /* Títulos: más abajo */
+    body.figuras-grandes .titulo-nuestras-figuras,
+    body.figuras-chicas .titulo-nuestras-figuras {
+        padding-top: 110px !important;
+        padding-bottom: 0 !important;
+        font-size: 2rem !important;
+    }
+
+    /* Tarjetas: un poco más chicas */
+    body.figuras-grandes .catalogo-figuras,
+    body.figuras-chicas .catalogo-figuras {
+        width: 86% !important;
+        margin: 25px auto 30px !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura,
+    body.figuras-chicas .catalogo-figuras .figura {
+        padding: 9px !important;
+        border-radius: 15px !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura img,
+    body.figuras-chicas .catalogo-figuras .figura img {
+        width: 100% !important;
+        height: 95px !important;
+        object-fit: contain !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura h2,
+    body.figuras-chicas .catalogo-figuras .figura h2 {
+        font-size: 0.85rem !important;
+        margin-top: 7px !important;
+    }
+}
