@@ -2257,7 +2257,7 @@ body.pagina-contacto .encabezado-contacto h1 {
   }
 
   body.pagina-inicio .presentacion {
-      padding-top: 175px !important;
+      padding-top: 195px !important;
   }
 
   body.pagina-inicio .presentacion-texto h1 {
@@ -2271,7 +2271,7 @@ body.pagina-contacto .encabezado-contacto h1 {
   }
 
   body.pagina-inicio .presentacion-imagen {
-      margin-top: 20px !important;
+      margin-top: 25px !important;
   }
 
 }
@@ -2279,22 +2279,22 @@ body.pagina-contacto .encabezado-contacto h1 {
 @media (max-width: 700px) {
 
   body.pagina-categorias .fondo-navidad {
-      transform: scaleY(1.06) !important;
+      transform: scaleY(1.08) !important;
       transform-origin: top center;
   }
 
   body.pagina-categorias .titulo-nuestras-figuras {
-      padding-top: 165px !important;
+      padding-top: 175px !important;
   }
 
   body.pagina-categorias .tarjetas-productos {
-      width: 72% !important;
-      margin-top: 55px !important;
+      width: 70% !important;
+      margin-top: 60px !important;
       gap: 12px !important;
   }
 
   body.pagina-categorias .tarjetas-productos .tarjeta-contacto {
-      padding: 11px 9px !important;
+      padding: 10px 8px !important;
   }
 
 }
@@ -2303,13 +2303,13 @@ body.pagina-contacto .encabezado-contacto h1 {
 
   body.figuras-grandes .fondo-navidad,
   body.figuras-chicas .fondo-navidad {
-      transform: scaleY(1.05) !important;
+      transform: scaleY(1.07) !important;
       transform-origin: center center;
   }
 
   body.figuras-grandes .titulo-nuestras-figuras,
   body.figuras-chicas .titulo-nuestras-figuras {
-      padding-top: 165px !important;
+      padding-top: 170px !important;
   }
 
   body.figuras-grandes .catalogo-figuras,
@@ -2329,12 +2329,12 @@ body.pagina-contacto .encabezado-contacto h1 {
 @media (max-width: 700px) {
 
   body.pagina-contacto .fondo-navidad {
-      transform: scaleY(1.06) !important;
+      transform: scaleY(1.08) !important;
       transform-origin: top center;
   }
 
   body.pagina-contacto .contacto {
-      padding-top: 150px !important;
+      padding-top: 160px !important;
   }
 
   body.pagina-contacto .encabezado-contacto h1 {
@@ -2347,7 +2347,7 @@ body.pagina-contacto .encabezado-contacto h1 {
 
   body.pagina-contacto .opciones-contacto {
       width: 82% !important;
-      margin-top: 35px !important;
+      margin-top: 30px !important;
       gap: 12px !important;
   }
 
