@@ -2205,3 +2205,54 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         font-size: 0.85rem !important;
     }
 }
+
+
+/* ==========================================
+   INICIO - AJUSTE FINAL DE CELULAR
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* Bajamos toda la presentación */
+    body.pagina-inicio.pagina-fondo-navidad .presentacion {
+        padding-top: 285px !important;
+        gap: 20px !important;
+    }
+
+    /* Bajamos un poquito más las frases */
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-texto {
+        margin-top: 15px !important;
+        transform: translateY(20px) !important;
+    }
+
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-texto p {
+        transform: translateY(18px) !important;
+        margin-bottom: 18px !important;
+    }
+
+    /* Agrandamos un poquito la imagen */
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen {
+        width: 100% !important;
+        margin-top: 12px !important;
+    }
+
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
+        width: 82% !important;
+        max-width: 280px !important;
+        height: auto !important;
+        top: 0 !important;
+    }
+
+    /* Separamos los botones transparentes */
+    body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(1) {
+        top: 0 !important;
+    }
+
+    body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(2) {
+        top: 32px !important;
+    }
+
+    body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(3) {
+        top: 64px !important;
+    }
+}
