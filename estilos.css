@@ -2021,3 +2021,17 @@ body.pagina-contacto .encabezado-contacto h1 {
   }
 
 }
+
+/* FONDOS ESPECIALES PARA CELULAR */
+@media screen and (max-width: 700px) {
+
+  body.pagina-inicio .fondo-navidad1 {
+    content: url("img/fondoceluinicio.jpg");
+  }
+
+  body.pagina-productos-sobres .fondo-navidad,
+  body.pagina-contacto .fondo-navidad {
+    content: url("img/fondocelu.jpg");
+  }
+
+}
