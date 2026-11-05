@@ -2005,52 +2005,30 @@ body.pagina-contacto .encabezado-contacto h1 {
 
 @media (max-width: 700px) {
 
-    /* BOTONES INVISIBLES: TRES FRANJAS RECTANGULARES */
-    body.pagina-fondo-navidad .zona-menu-superior,
-    body.pagina-productos-sobres .zona-menu-superior,
-    body.pagina-contacto .zona-menu-superior {
-        position: absolute !important;
-        top: 140px !important;
+        /* BOTONES TRANSPARENTES - INICIO */
+    body.pagina-inicio .zona-menu-superior {
+        top: 110px !important;
         left: 0 !important;
         width: 100% !important;
         height: 85px !important;
-        z-index: 100 !important;
-        pointer-events: none;
     }
 
-    body.pagina-fondo-navidad .zona-menu-superior a,
-    body.pagina-productos-sobres .zona-menu-superior a,
-    body.pagina-contacto .zona-menu-superior a {
-        position: absolute !important;
-        left: 14% !important;
-        width: 72% !important;
-        min-width: 0 !important;
-        max-width: none !important;
-        height: 20px !important;
-        aspect-ratio: auto !important;
-        display: block !important;
-        transform: none !important;
-        pointer-events: auto !important;
-        border-radius: 0 !important;
-        background: transparent;
+    body.pagina-inicio .zona-menu-superior a {
+        left: 12% !important;
+        width: 76% !important;
+        height: 17px !important;
     }
 
-    body.pagina-fondo-navidad .zona-menu-superior a:nth-child(1),
-    body.pagina-productos-sobres .zona-menu-superior a:nth-child(1),
-    body.pagina-contacto .zona-menu-superior a:nth-child(1) {
+    body.pagina-inicio .zona-menu-superior a:nth-child(1) {
         top: 0 !important;
     }
 
-    body.pagina-fondo-navidad .zona-menu-superior a:nth-child(2),
-    body.pagina-productos-sobres .zona-menu-superior a:nth-child(2),
-    body.pagina-contacto .zona-menu-superior a:nth-child(2) {
-        top: 27px !important;
+    body.pagina-inicio .zona-menu-superior a:nth-child(2) {
+        top: 25px !important;
     }
 
-    body.pagina-fondo-navidad .zona-menu-superior a:nth-child(3),
-    body.pagina-productos-sobres .zona-menu-superior a:nth-child(3),
-    body.pagina-contacto .zona-menu-superior a:nth-child(3) {
-        top: 54px !important;
+    body.pagina-inicio .zona-menu-superior a:nth-child(3) {
+        top: 50px !important;
     }
 
     /* INICIO - AJUSTES DE CELULAR */
@@ -2110,6 +2088,20 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     margin: 0 auto !important;
     display: block !important;
 }
+
+/* INICIO - BAJAR PRESENTACIÓN */
+    body.pagina-inicio.pagina-fondo-navidad .presentacion {
+        padding-top: 175px !important;
+    }
+
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-texto {
+        margin-top: 25px !important;
+    }
+
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen {
+        margin-top: 5px !important;
+    }
+
     /* NUESTRAS FIGURAS: SUBIR TÍTULO Y TARJETAS */
     body.pagina-categorias .titulo-nuestras-figuras {
         top: 105px !important;
