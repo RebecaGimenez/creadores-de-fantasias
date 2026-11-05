@@ -1997,3 +1997,178 @@ body.pagina-contacto .encabezado-contacto h1 {
     }
 
 }
+
+
+/* ==========================================
+   NUEVA CORRECCIÓN DE CELULAR
+   ========================================== */
+
+@media (max-width: 700px) {
+
+    /* BOTONES INVISIBLES: TRES FRANJAS RECTANGULARES */
+    body.pagina-fondo-navidad .zona-menu-superior,
+    body.pagina-productos-sobres .zona-menu-superior,
+    body.pagina-contacto .zona-menu-superior {
+        position: absolute !important;
+        top: 65px !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 85px !important;
+        z-index: 100 !important;
+        pointer-events: none;
+    }
+
+    body.pagina-fondo-navidad .zona-menu-superior a,
+    body.pagina-productos-sobres .zona-menu-superior a,
+    body.pagina-contacto .zona-menu-superior a {
+        position: absolute !important;
+        left: 14% !important;
+        width: 72% !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        height: 20px !important;
+        aspect-ratio: auto !important;
+        display: block !important;
+        transform: none !important;
+        pointer-events: auto !important;
+        border-radius: 0 !important;
+        background: transparent;
+    }
+
+    body.pagina-fondo-navidad .zona-menu-superior a:nth-child(1),
+    body.pagina-productos-sobres .zona-menu-superior a:nth-child(1),
+    body.pagina-contacto .zona-menu-superior a:nth-child(1) {
+        top: 0 !important;
+    }
+
+    body.pagina-fondo-navidad .zona-menu-superior a:nth-child(2),
+    body.pagina-productos-sobres .zona-menu-superior a:nth-child(2),
+    body.pagina-contacto .zona-menu-superior a:nth-child(2) {
+        top: 27px !important;
+    }
+
+    body.pagina-fondo-navidad .zona-menu-superior a:nth-child(3),
+    body.pagina-productos-sobres .zona-menu-superior a:nth-child(3),
+    body.pagina-contacto .zona-menu-superior a:nth-child(3) {
+        top: 54px !important;
+    }
+
+
+    /* INICIO: TÍTULO EN UNA SOLA LÍNEA */
+    body.pagina-fondo-navidad .presentacion {
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        padding: 85px 5% 30px !important;
+        gap: 8px !important;
+    }
+
+    body.pagina-fondo-navidad .presentacion-texto {
+        width: 100% !important;
+        padding-top: 0 !important;
+        text-align: center !important;
+    }
+
+    body.pagina-fondo-navidad .presentacion-texto h1 {
+        position: relative !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 100% !important;
+        white-space: nowrap !important;
+        font-size: clamp(2rem, 8vw, 2.8rem) !important;
+        line-height: 1.2 !important;
+        margin: 0 auto 8px !important;
+    }
+
+    body.pagina-fondo-navidad .presentacion-texto .subtitulo {
+        font-size: 0.9rem !important;
+        line-height: 1.4 !important;
+        margin: 0 auto 8px !important;
+        text-align: center !important;
+    }
+
+    body.pagina-fondo-navidad .presentacion-imagen {
+        width: 100% !important;
+        padding-top: 0 !important;
+        margin: 0 auto !important;
+    }
+
+    body.pagina-fondo-navidad .presentacion-imagen img {
+        position: relative !important;
+        top: 0 !important;
+        width: 78% !important;
+        max-width: 290px !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1 !important;
+        margin: 0 auto !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+    }
+
+
+    /* NUESTRAS FIGURAS: SUBIR TÍTULO Y TARJETAS */
+    body.pagina-categorias .titulo-nuestras-figuras {
+        top: 105px !important;
+        font-size: 25px !important;
+    }
+
+    body.pagina-categorias .tarjetas-productos {
+        top: 28% !important;
+        transform: none !important;
+        gap: 15px !important;
+    }
+
+
+    /* FIGURAS GRANDES Y CHICAS: ACHICAR TÍTULO Y TARJETAS */
+    body.figuras-grandes .titulo-nuestras-figuras,
+    body.figuras-chicas .titulo-nuestras-figuras {
+        top: 90px !important;
+        font-size: 24px !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras,
+    body.figuras-chicas .catalogo-figuras {
+        left: 7% !important;
+        width: 86% !important;
+        gap: 10px !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura,
+    body.figuras-chicas .catalogo-figuras .figura {
+        padding: 7px !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura img,
+    body.figuras-chicas .catalogo-figuras .figura img {
+        height: 115px !important;
+    }
+
+
+    /* CONTACTOS: TARJETAS MÁS COMPACTAS */
+    body.pagina-contacto .opciones-contacto {
+        width: 88% !important;
+        margin: 18px auto !important;
+        gap: 14px !important;
+    }
+
+    body.pagina-contacto .tarjeta-contacto {
+        flex-basis: 100% !important;
+        padding: 16px 14px !important;
+    }
+
+    body.pagina-contacto .tarjeta-contacto h2 {
+        font-size: 1.3rem !important;
+        margin-bottom: 8px !important;
+    }
+
+    body.pagina-contacto .tarjeta-contacto p {
+        font-size: 0.9rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 12px !important;
+    }
+
+    body.pagina-contacto .boton-contacto {
+        padding: 9px 16px !important;
+        font-size: 0.85rem !important;
+    }
+}
