@@ -1963,23 +1963,61 @@ body.pagina-contacto .encabezado-contacto h1 {
 }
 
 /* =====================================
-   PRUEBA DE PROPORCIÓN DEL FONDO EN CELULAR
+   ADAPTACIÓN ESPECIAL PARA CELULARES
+   No modifica la versión de computadora
 ===================================== */
 
 @media screen and (max-width: 700px) {
 
-    body.pagina-inicio .marco-pagina {
-        width: 100% !important;
-        max-width: 100% !important;
-        overflow: hidden !important;
-    }
+  html,
+  body {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    background-color: var(--crema) !important;
+  }
 
-    body.pagina-inicio .fondo-navidad1 {
-        width: 100% !important;
-        height: auto !important;
-        max-width: 100% !important;
-        object-fit: contain !important;
-        object-position: center top !important;
-    }
+  /* Los contenedores se adaptan al contenido */
+  body.pagina-inicio .marco-pagina,
+  body.pagina-productos-sobres .marco-sobres,
+  body.pagina-contacto .marco-sobres {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: var(--crema) !important;
+  }
+
+  /* Fondo de Inicio */
+  body.pagina-inicio .fondo-navidad1 {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center top !important;
+    z-index: -1 !important;
+  }
+
+  /* Fondos de Productos y Contactos */
+  body.pagina-productos-sobres .fondo-navidad,
+  body.pagina-contacto .fondo-navidad {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center top !important;
+    z-index: -1 !important;
+  }
 
 }
