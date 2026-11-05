@@ -2221,18 +2221,18 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     /* Bajamos un poquito más las frases */
     body.pagina-inicio.pagina-fondo-navidad .presentacion-texto {
-        margin-top: 15px !important;
-        transform: translateY(20px) !important;
+        margin-top: 10px !important;
+        transform: translateY(15px) !important;
     }
 
     body.pagina-inicio.pagina-fondo-navidad .presentacion-texto p {
-        transform: translateY(18px) !important;
-        margin-bottom: 18px !important;
+        transform: translateY(15px) !important;
+        margin-bottom: 15px !important;
     }
 
     /* Agrandamos un poquito la imagen */
     body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen {
-        width: 100% !important;
+        width: 95% !important;
         margin-top: 12px !important;
     }
 
@@ -2245,14 +2245,14 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     /* Separamos los botones transparentes */
     body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(1) {
-        top: 0 !important;
+        top: -2 !important;
     }
 
     body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(2) {
-        top: 32px !important;
+        top: 35px !important;
     }
 
     body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(3) {
-        top: 64px !important;
+        top: 70px !important;
     }
 }
