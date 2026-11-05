@@ -1796,15 +1796,13 @@ body.pagina-contacto .encabezado-contacto h1 {
     body.figuras-chicas .fondo-navidad {
         position: absolute !important;
         top: 0 !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important; /* Lo centra perfectamente */
-        width: 88% !important;                 /* Achica el ancho para que no toque los bordes extremos */
-        max-width: 420px !important;          /* Límite ideal para pantallas de celulares */
+        left: 0 !important;
+        width: 100% !important;
         height: 100% !important;
-        object-fit: cover !important;
+        object-fit: contain !important;      /* Muestra la imagen completa sin recortar los bordes */
         object-position: center top !important;
         z-index: -1 !important;
-        border-radius: 12px !important;        /* Opcional: da un toque estético prolijo */
+        background-color: var(--crema) !important; /* Rellena prolijamente los espacios vacíos */
     }
 
     /* 4. INICIO: Textos e imagen centrados y sin estirarse */
