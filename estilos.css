@@ -1760,37 +1760,35 @@ body.pagina-contacto .encabezado-contacto h1 {
 }
 
  /* ==========================================
-   AJUSTE DE ANCHO PERFECTO PARA CELULARES
+   AJUSTE DE FONDO ACHICADO Y CENTRADO EN CELULARES
 ========================================== */
 
 @media (max-width: 700px) {
 
-    /* 1. Forzamos que las páginas tengan el color crema de fondo a los costados */
-    body.pagina-inicio,
-    body.pagina-categorias,
-    body.pagina-contacto,
-    body.figuras-grandes,
-    body.figuras-chicas {
+    /* 1. Fondo general de la página en tono crema */
+    html, body {
         background-color: var(--crema) !important;
         overflow-x: hidden !important;
         margin: 0 !important;
         padding: 0 !important;
+        width: 100% !important;
     }
 
-    /* 2. Contenedores generales centrados y limitados al ancho real de un celular */
+    /* 2. Contenedores generales */
     .marco-pagina,
     .marco-sobres {
         position: relative !important;
         width: 100% !important;
-        max-width: 480px !important; /* Limita el ancho para que no se expanda de más */
-        margin: 0 auto !important;     /* Centra perfectamente el contenido en la pantalla */
+        max-width: 100% !important;
+        margin: 0 auto !important;
         min-height: 100vh !important;
         overflow: hidden !important;
         background-color: var(--crema) !important;
     }
 
-    /* 3. ACHICAR EL FONDO DE LOS COSTADOS: 
-       Centramos la imagen y limitamos su ancho a 480px */
+    /* 3. ACHICAR EL FONDO DE LOS COSTADOS:
+       Limitamos el ancho de la imagen al 88% y la centramos, 
+       dejando un margen prolijo a cada lado en color crema */
     body.pagina-inicio .fondo-navidad1,
     body.pagina-categorias .fondo-navidad,
     body.pagina-contacto .fondo-navidad,
@@ -1799,131 +1797,157 @@ body.pagina-contacto .encabezado-contacto h1 {
         position: absolute !important;
         top: 0 !important;
         left: 50% !important;
-        transform: translateX(-50%) !important; /* Lo centra de forma exacta */
-        width: 100% !important;
-        max-width: 480px !important;          /* Evita que se estire hacia los laterales */
+        transform: translateX(-50%) !important; /* Lo centra perfectamente */
+        width: 88% !important;                 /* Achica el ancho para que no toque los bordes extremos */
+        max-width: 420px !important;          /* Límite ideal para pantallas de celulares */
         height: 100% !important;
         object-fit: cover !important;
         object-position: center top !important;
         z-index: -1 !important;
+        border-radius: 12px !important;        /* Opcional: da un toque estético prolijo */
     }
 
-    /* 4. INICIO: Textos e imagen centrados */
+    /* 4. INICIO: Textos e imagen centrados y sin estirarse */
     body.pagina-inicio .presentacion {
-        width: 100%;
-        min-height: 100vh;
-        padding: 90px 5% 30px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 15px;
+        width: 100% !important;
+        min-height: 100vh !important;
+        padding: 80px 20px 30px !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 20px !important;
+    }
+
+    body.pagina-inicio .presentacion-texto {
+        width: 100% !important;
+        padding: 0 !important;
+        flex: none !important;
+        text-align: center !important;
     }
 
     body.pagina-inicio .presentacion-texto h1 {
-        font-size: clamp(2.5rem, 9vw, 3.5rem);
-        left: 0;
-        top: 0;
-        transform: none;
-        margin: 0 auto 12px;
-        text-align: center;
+        font-size: 2.8rem !important;
+        left: 0 !important;
+        top: 0 !important;
+        transform: none !important;
+        margin: 0 auto 15px auto !important;
+        text-align: center !important;
+        position: static !important;
+    }
+
+    body.pagina-inicio .presentacion-texto p {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+        margin: 0 auto 12px auto !important;
+        transform: none !important;
+        text-align: center !important;
     }
 
     body.pagina-inicio .presentacion-imagen {
-        width: 75%;
-        max-width: 260px;
-        margin: 0 auto;
+        width: 100% !important;
+        max-width: 220px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
     }
 
     body.pagina-inicio .presentacion-imagen img {
-        width: 100%;
-        max-height: 260px;
-        aspect-ratio: 1 / 1;
-        position: static;
+        width: 100% !important;
+        height: auto !important;
+        max-height: 220px !important;
+        aspect-ratio: 1 / 1 !important;
+        position: static !important;
+        top: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
     }
 
     /* 5. NUESTRAS FIGURAS Y CONTACTO: Títulos y tarjetas compactas */
     body.pagina-categorias .titulo-nuestras-figuras,
     body.figuras-grandes .titulo-nuestras-figuras,
     body.figuras-chicas .titulo-nuestras-figuras {
-        position: relative;
+        position: relative !important;
         top: auto !important;
-        padding: 100px 10px 0;
-        font-size: 2.3rem;
-        text-align: center;
+        left: auto !important;
+        transform: none !important;
+        padding: 90px 10px 0 !important;
+        font-size: 2.3rem !important;
+        text-align: center !important;
     }
 
     body.pagina-categorias .tarjetas-productos {
-        position: relative;
-        top: auto;
-        left: auto;
-        width: 90%;
-        margin: 20px auto 0;
-        transform: none;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 16px;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 85% !important;
+        margin: 20px auto 0 auto !important;
+        transform: none !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
     }
 
     body.pagina-contacto .contacto {
-        padding: 85px 15px 35px;
+        padding: 80px 15px 35px !important;
         max-width: 100% !important;
     }
 
     body.pagina-contacto .opciones-contacto {
-        flex-direction: column;
-        width: 100%;
-        gap: 14px;
-        margin: 10px auto;
+        flex-direction: column !important;
+        width: 90% !important;
+        gap: 14px !important;
+        margin: 10px auto !important;
     }
 
     body.pagina-contacto .tarjeta-contacto {
-        width: 100%;
-        padding: 16px 12px;
+        width: 100% !important;
+        padding: 16px 12px !important;
     }
 
     /* 6. CATÁLOGOS DE FIGURAS: Dos columnas prolijas */
     body.figuras-grandes .catalogo-figuras,
     body.figuras-chicas .catalogo-figuras {
-        position: relative;
-        top: auto;
-        left: auto;
-        width: 92%;
-        margin: 20px auto;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 90% !important;
+        margin: 20px auto !important;
         display: grid !important;
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 12px;
+        gap: 12px !important;
     }
 
     body.figuras-grandes .catalogo-figuras .figura img,
     body.figuras-chicas .catalogo-figuras .figura img {
-        height: 130px;
-        object-fit: contain;
+        height: 120px !important;
+        object-fit: contain !important;
     }
 
     /* 7. ZONAS DE NAVEGACIÓN SUPERIOR */
     .zona-menu-superior {
-        position: absolute;
-        top: 0;
-        left: 3%;
-        width: 94%;
-        height: 85px;
-        z-index: 100;
-        pointer-events: none;
+        position: absolute !important;
+        top: 0 !important;
+        left: 5% !important;
+        width: 90% !important;
+        height: 80px !important;
+        z-index: 100 !important;
+        pointer-events: none !important;
     }
 
     .zona-menu-superior a {
-        position: absolute;
-        top: 0;
-        height: 85px;
-        display: block;
-        pointer-events: auto;
-        cursor: pointer;
+        position: absolute !important;
+        top: 0 !important;
+        height: 80px !important;
+        display: block !important;
+        pointer-events: auto !important;
+        cursor: pointer !important;
     }
 
-    .zona-menu-superior a:nth-child(1) { left: 55%; width: 13%; }
-    .zona-menu-superior a:nth-child(2) { left: 68%; width: 19%; }
-    .zona-menu-superior a:nth-child(3) { left: 87%; width: 12%; }
+    .zona-menu-superior a:nth-child(1) { left: 55% !important; width: 13% !important; }
+    .zona-menu-superior a:nth-child(2) { left: 68% !important; width: 19% !important; }
+    .zona-menu-superior a:nth-child(3) { left: 87% !important; width: 12% !important; }
 
     /* 8. CARRITO: Fijo abajo a la derecha */
     .boton-carrito,
