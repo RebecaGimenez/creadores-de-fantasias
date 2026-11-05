@@ -1961,3 +1961,25 @@ body.pagina-contacto .encabezado-contacto h1 {
         transform: none !important;
     }
 }
+
+/* =====================================
+   PRUEBA DE PROPORCIÓN DEL FONDO EN CELULAR
+===================================== */
+
+@media screen and (max-width: 700px) {
+
+    body.pagina-inicio .marco-pagina {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    body.pagina-inicio .fondo-navidad1 {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+        object-fit: contain !important;
+        object-position: center top !important;
+    }
+
+}
