@@ -2145,9 +2145,11 @@ body.pagina-contacto .encabezado-contacto h1 {
     }
 
     body.pagina-inicio .presentacion-imagen img {
-        width: 100% !important;
-        max-width: 250px !important;
-        height: auto !important;
+        width: 150px !important;
+        height: 150px !important;
+        aspect-ratio: 1 / 1 !important;
+        object-fit: cover !important;
+        border-radius: 50% !important;
     }
 
 
@@ -2244,5 +2246,113 @@ body.pagina-contacto .encabezado-contacto h1 {
     body.pagina-productos-sobres.pagina-categorias .tarjetas-productos {
         margin-top: 42px !important;
     }
+
+}
+
+@media (max-width: 700px) {
+
+  body.pagina-inicio .fondo-navidad1 {
+      transform: scaleY(1.06) !important;
+      transform-origin: top center;
+  }
+
+  body.pagina-inicio .presentacion {
+      padding-top: 175px !important;
+  }
+
+  body.pagina-inicio .presentacion-texto h1 {
+      margin-top: 25px !important;
+      margin-bottom: 25px !important;
+  }
+
+  body.pagina-inicio .presentacion-texto p {
+      margin-top: 20px !important;
+      font-size: 1rem !important;
+  }
+
+  body.pagina-inicio .presentacion-imagen {
+      margin-top: 20px !important;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  body.pagina-categorias .fondo-navidad {
+      transform: scaleY(1.06) !important;
+      transform-origin: top center;
+  }
+
+  body.pagina-categorias .titulo-nuestras-figuras {
+      padding-top: 165px !important;
+  }
+
+  body.pagina-categorias .tarjetas-productos {
+      width: 72% !important;
+      margin-top: 55px !important;
+      gap: 12px !important;
+  }
+
+  body.pagina-categorias .tarjetas-productos .tarjeta-contacto {
+      padding: 11px 9px !important;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  body.figuras-grandes .fondo-navidad,
+  body.figuras-chicas .fondo-navidad {
+      transform: scaleY(1.05) !important;
+      transform-origin: center center;
+  }
+
+  body.figuras-grandes .titulo-nuestras-figuras,
+  body.figuras-chicas .titulo-nuestras-figuras {
+      padding-top: 165px !important;
+  }
+
+  body.figuras-grandes .catalogo-figuras,
+  body.figuras-chicas .catalogo-figuras {
+      width: 80% !important;
+      margin-top: 50px !important;
+      gap: 12px !important;
+  }
+
+  body.figuras-grandes .catalogo-figuras .figura,
+  body.figuras-chicas .catalogo-figuras .figura {
+      padding: 6px !important;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  body.pagina-contacto .fondo-navidad {
+      transform: scaleY(1.06) !important;
+      transform-origin: top center;
+  }
+
+  body.pagina-contacto .contacto {
+      padding-top: 150px !important;
+  }
+
+  body.pagina-contacto .encabezado-contacto h1 {
+      font-size: 2.2rem !important;
+  }
+
+  body.pagina-contacto .encabezado-contacto p {
+      font-size: 0.85rem !important;
+  }
+
+  body.pagina-contacto .opciones-contacto {
+      width: 82% !important;
+      margin-top: 35px !important;
+      gap: 12px !important;
+  }
+
+  body.pagina-contacto .tarjeta-contacto {
+      padding: 12px 10px !important;
+  }
 
 }
