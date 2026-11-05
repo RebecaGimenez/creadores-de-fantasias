@@ -2022,16 +2022,25 @@ body.pagina-contacto .encabezado-contacto h1 {
 
 }
 
-/* FONDOS ESPECIALES PARA CELULAR */
+/* FONDOS VERTICALES PARA CELULAR */
 @media screen and (max-width: 700px) {
 
-  body.pagina-inicio .fondo-navidad1 {
-    content: url("img/fondoceluinicio.jpg");
-  }
+    .fondo-responsive {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        z-index: -1 !important;
+    }
 
-  body.pagina-productos-sobres .fondo-navidad,
-  body.pagina-contacto .fondo-navidad {
-    content: url("img/fondocelu.jpg");
-  }
-
+    .fondo-responsive img {
+        position: static !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
 }
