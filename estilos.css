@@ -2079,8 +2079,9 @@ body.pagina-contacto .encabezado-contacto h1 {
         line-height: 1.2 !important;
         margin: 0 auto 8px !important;
     }
-
-    body.pagina-fondo-navidad .presentacion-texto .subtitulo {
+    body.pagina-fondo-navidad .presentacion-texto p {
+        width: 100% !important;
+        max-width: 500px !important;
         font-size: 0.9rem !important;
         line-height: 1.4 !important;
         margin: 0 auto 8px !important;
