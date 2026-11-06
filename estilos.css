@@ -2550,7 +2550,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     /* Bajamos un poquito toda la presentación */
     body.pagina-inicio.pagina-fondo-navidad .presentacion {
-        padding-top: 230px !important;
+        padding-top: 260px !important;
         gap: 12px !important;
     }
 
@@ -2584,6 +2584,81 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     /* Tarjetas un poquito más abajo */
     html body.pagina-productos-sobres.pagina-categorias .tarjetas-productos {
         top: 300px !important;
+    }
+
+}
+
+/* ==========================================
+   CONTACTOS - AJUSTES FINALES CELULAR
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* FONDO: MISMA MEDIDA QUE INICIO Y PRODUCTOS */
+    body.pagina-contacto .marco-sobres {
+        min-height: 100svh !important;
+        position: relative !important;
+    }
+
+    body.pagina-contacto .fondo-navidad {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: fill !important;
+        object-position: center top !important;
+    }
+
+    /* BAJAR TÍTULO, FRASE Y TARJETAS */
+    body.pagina-contacto .contacto {
+        padding-top: 140px !important;
+    }
+
+    /* TÍTULO */
+    body.pagina-contacto .encabezado-contacto h1 {
+        font-size: 2.2rem !important;
+        margin-bottom: 12px !important;
+    }
+
+    /* FRASE */
+    body.pagina-contacto .encabezado-contacto p {
+        font-size: 0.95rem !important;
+        line-height: 1.4 !important;
+        margin: 8px auto !important;
+        padding: 0 8px !important;
+    }
+
+    /* TARJETAS MÁS CHICAS */
+    body.pagina-contacto .opciones-contacto {
+        width: 84% !important;
+        margin: 22px auto !important;
+        gap: 12px !important;
+    }
+
+    body.pagina-contacto .opciones-contacto .tarjeta-contacto {
+        width: 100% !important;
+        flex-basis: 100% !important;
+        padding: 12px 14px !important;
+    }
+
+    /* TÍTULOS DE LAS TARJETAS */
+    body.pagina-contacto .tarjeta-contacto h2 {
+        font-size: 1.2rem !important;
+        margin: 5px 0 7px !important;
+    }
+
+    /* TEXTO DE LAS TARJETAS */
+    body.pagina-contacto .tarjeta-contacto p {
+        font-size: 0.85rem !important;
+        line-height: 1.35 !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* BOTONES */
+    body.pagina-contacto .tarjeta-contacto .boton-contacto {
+        padding: 8px 16px !important;
+        font-size: 0.85rem !important;
     }
 
 }
