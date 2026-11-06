@@ -2722,3 +2722,34 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         top: 164px !important;
     }
 }
+
+/* ==========================================
+   CONTACTOS - AJUSTE FINO PARA CELULAR
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* Subir el contenido de Contactos */
+    body.pagina-contacto .contacto {
+        padding-top: 80px !important;
+    }
+
+    /* Subir título y frase */
+    body.pagina-contacto .encabezado-contacto {
+        margin-top: 140px !important;
+    }
+
+    /* Mantener las tarjetas alineadas debajo */
+    body.pagina-contacto .opciones-contacto {
+        margin-top: 15px !important;
+    }
+
+    /* Botones del menú: los últimos dos un poquito más abajo */
+    body.pagina-contacto .zona-menu-superior a:nth-child(2) {
+        top: 128px !important;
+    }
+
+    body.pagina-contacto .zona-menu-superior a:nth-child(3) {
+        top: 171px !important;
+    }
+}
