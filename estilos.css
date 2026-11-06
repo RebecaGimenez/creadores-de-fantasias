@@ -2736,7 +2736,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     /* Subir título y frase */
     body.pagina-contacto .encabezado-contacto {
-        margin-top: 140px !important;
+        margin-top: 142px !important;
     }
 
     /* Mantener las tarjetas alineadas debajo */
@@ -2751,5 +2751,100 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     body.pagina-contacto .zona-menu-superior a:nth-child(3) {
         top: 171px !important;
+    }
+}
+
+/* ==========================================
+   INICIO - BAJAR PRESENTACIÓN EN CELULAR
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* Título */
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-texto h1 {
+        transform: translateY(25px) !important;
+    }
+
+    /* Frase */
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-texto p {
+        transform: translateY(25px) !important;
+    }
+
+    /* Imagen redonda */
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen {
+        transform: translateY(25px) !important;
+    }
+}
+
+/* ==========================================
+   FIGURAS GRANDES Y CHICAS - AJUSTE CELULAR
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* Fondo: agrandarlo como el de Productos */
+    body.figuras-grandes .marco-sobres,
+    body.figuras-chicas .marco-sobres {
+        position: relative !important;
+        min-height: 100svh !important;
+        overflow: visible !important;
+    }
+
+    body.figuras-grandes .fondo-navidad,
+    body.figuras-chicas .fondo-navidad {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: fill !important;
+        object-position: center top !important;
+    }
+
+    /* Título: un poquito más abajo y más grande */
+    body.figuras-grandes .titulo-nuestras-figuras,
+    body.figuras-chicas .titulo-nuestras-figuras {
+        position: absolute !important;
+        top: 105px !important;
+        padding-top: 0 !important;
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+        width: 100% !important;
+        text-align: center !important;
+        z-index: 60 !important;
+    }
+
+    /* Tarjetas: subirlas y achicarlas */
+    body.figuras-grandes .catalogo-figuras,
+    body.figuras-chicas .catalogo-figuras {
+        position: absolute !important;
+        top: 185px !important;
+        left: 7% !important;
+        width: 86% !important;
+        margin: 0 !important;
+        padding-bottom: 15px !important;
+        gap: 9px !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        z-index: 5 !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura,
+    body.figuras-chicas .catalogo-figuras .figura {
+        padding: 5px !important;
+        min-width: 0 !important;
+        aspect-ratio: 1 / 1 !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura img,
+    body.figuras-chicas .catalogo-figuras .figura img {
+        width: 100% !important;
+        height: 95px !important;
+        object-fit: contain !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura h2,
+    body.figuras-chicas .catalogo-figuras .figura h2 {
+        font-size: 0.95rem !important;
+        margin: 5px 0 2px !important;
     }
 }
