@@ -2951,7 +2951,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     body.figuras-grandes .fondo-navidad,
     body.figuras-chicas .fondo-navidad {
         width: 100% !important;
-        height: 98% !important;
+        height: 100% !important;
         object-fit: fill !important;
         object-position: center top !important;
     }
@@ -2959,8 +2959,8 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     /* Subir un poquito las tarjetas */
     body.figuras-grandes .catalogo-figuras,
     body.figuras-chicas .catalogo-figuras {
-        margin-top: 12px !important;
-        transform: translateY(-12px) !important;
+        margin-top: 14px !important;
+        transform: translateY(-14px) !important;
     }
 
     /* Comprimir las tarjetas verticalmente */
