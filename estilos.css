@@ -2380,10 +2380,10 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     html body.pagina-productos-sobres .zona-menu-superior a:nth-child(2) { top: 114px !important; }
     html body.pagina-productos-sobres .zona-menu-superior a:nth-child(3) { top: 147px !important; }
 
-    /* PRODUCTOS: Título centrado y visible */
+      /* PRODUCTOS: Título bajado debajo del botón de Contacto */
     html body.pagina-productos-sobres.pagina-categorias .titulo-nuestras-figuras {
         position: absolute !important;
-        top: 188px !important;
+        top: 218px !important;
         padding-top: 0 !important;
         margin: 0 !important;
         font-size: 1.9rem !important;
@@ -2397,7 +2397,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     /* PRODUCTOS: Tarjetas bajadas con espacio prolijo */
     html body.pagina-productos-sobres.pagina-categorias .tarjetas-productos {
         position: absolute !important;
-        top: 238px !important;
+        top: 272px !important;
         left: 11% !important;
         width: 78% !important;
         margin: 0 !important;
@@ -2429,12 +2429,17 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         font-size: 0.85rem !important;
     }
 
-    /* PRODUCTOS: Botón carrito achicado y centrado */
-    html body.pagina-categorias .boton-carrito {
+    /* PRODUCTOS: Botón carrito abajo a la izquierda (firme y sin moverse al tocarlo) */
+    html body.pagina-categorias .boton-carrito,
+    html body.pagina-categorias .boton-carrito:hover,
+    html body.pagina-categorias .boton-carrito:active {
         position: absolute !important;
-        top: 524px !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
+        top: 556px !important;
+        left: 11% !important;
+        bottom: auto !important;
+        right: auto !important;
+        transform: none !important;
+        transition: none !important;
         margin: 0 !important;
         padding: 7px 18px !important;
         font-size: 0.9rem !important;
