@@ -2861,7 +2861,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     /* Título un poquito más abajo y más grande */
     body.figuras-grandes .titulo-nuestras-figuras,
     body.figuras-chicas .titulo-nuestras-figuras {
-        top: 250px !important;
+        top: 260px !important;
         font-size: 29px !important;
         padding-top: 0 !important;
     }
@@ -2906,5 +2906,43 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         background: transparent !important;
         outline: none !important;
         border: none !important;
+    }
+}
+
+/* ==========================================
+   PRUEBA DE AJUSTE - FIGURAS GRANDES Y CHICAS
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* Fondo un poquito más chico, sin comprimirlo */
+    body.figuras-grandes .fondo-navidad,
+    body.figuras-chicas .fondo-navidad {
+        width: 100% !important;
+        height: 94% !important;
+        object-fit: contain !important;
+        object-position: center top !important;
+    }
+
+    /* Bajar un poquito los botones */
+    body.figuras-grandes .zona-menu-superior a,
+    body.figuras-chicas .zona-menu-superior a {
+        background: rgba(255, 0, 0, 0.35) !important;
+        outline: 1px solid red !important;
+    }
+
+    body.figuras-grandes .zona-menu-superior a:nth-child(1),
+    body.figuras-chicas .zona-menu-superior a:nth-child(1) {
+        top: 82px !important;
+    }
+
+    body.figuras-grandes .zona-menu-superior a:nth-child(2),
+    body.figuras-chicas .zona-menu-superior a:nth-child(2) {
+        top: 125px !important;
+    }
+
+    body.figuras-grandes .zona-menu-superior a:nth-child(3),
+    body.figuras-chicas .zona-menu-superior a:nth-child(3) {
+        top: 168px !important;
     }
 }
