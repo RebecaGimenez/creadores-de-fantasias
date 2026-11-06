@@ -2506,3 +2506,84 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         top: -2px !important;
     }
 }
+
+/* ==========================================
+   AJUSTES FINALES CELULAR
+   INICIO Y NUESTRAS FIGURAS
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* ==================================
+       INICIO
+    ================================== */
+
+    /* Fondo un poquito más chico */
+    body.pagina-inicio.pagina-fondo-navidad .fondo-navidad1 {
+        width: 100% !important;
+        height: 96% !important;
+        object-fit: fill !important;
+        object-position: center top !important;
+    }
+
+    /* Botones más cortos de lado a lado */
+    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(n) {
+        left: 24% !important;
+        width: 52% !important;
+        height: 35px !important;
+        background: transparent !important;
+        outline: none !important;
+    }
+
+    /* Posición de los tres botones */
+    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(1) {
+        top: 78px !important;
+    }
+
+    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(2) {
+        top: 121px !important;
+    }
+
+    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(3) {
+        top: 164px !important;
+    }
+
+    /* Bajamos un poquito toda la presentación */
+    body.pagina-inicio.pagina-fondo-navidad .presentacion {
+        padding-top: 230px !important;
+        gap: 12px !important;
+    }
+
+    /* Título */
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-texto h1 {
+        margin-bottom: 10px !important;
+    }
+
+    /* Frases */
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-texto p {
+        margin-top: 5px !important;
+        margin-bottom: 12px !important;
+    }
+
+    /* Imagen un poquito más abajo */
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen {
+        margin-top: 10px !important;
+    }
+
+
+    /* ==================================
+       NUESTRAS FIGURAS
+    ================================== */
+
+    /* Título un poquito más abajo y más grande */
+    html body.pagina-productos-sobres.pagina-categorias .titulo-nuestras-figuras {
+        top: 225px !important;
+        font-size: 2.5rem !important;
+    }
+
+    /* Tarjetas un poquito más abajo */
+    html body.pagina-productos-sobres.pagina-categorias .tarjetas-productos {
+        top: 300px !important;
+    }
+
+}
