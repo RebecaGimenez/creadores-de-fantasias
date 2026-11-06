@@ -2871,7 +2871,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         margin: 0 auto !important;
         padding-bottom: 20px !important;
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        margin-top: 40px !important;    
+        margin-top: 20px !important;    
     }
 
     body.figuras-grandes .catalogo-figuras .figura,
@@ -2884,7 +2884,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     body.figuras-grandes .catalogo-figuras .figura img,
     body.figuras-chicas .catalogo-figuras .figura img {
         width: 100% !important;
-        height: 90px !important;
+        height: 85px !important;
         object-fit: contain !important;
     }
 
@@ -2913,7 +2913,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     body.figuras-grandes .fondo-navidad,
     body.figuras-chicas .fondo-navidad {
         width: 101% !important;
-        height: 110% !important;
+        height: 120% !important;
         object-fit: contain !important;
         object-position: center top !important;
     }
