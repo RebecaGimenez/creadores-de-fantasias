@@ -2775,18 +2775,17 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         transform: translateY(25px) !important;
     }
 }
-
 /* ==========================================
-   FIGURAS GRANDES Y CHICAS - AJUSTE CELULAR
+   FIGURAS GRANDES Y CHICAS - AJUSTE FINAL
 ========================================== */
 
 @media (max-width: 700px) {
 
-    /* Fondo: agrandarlo como el de Productos */
+    /* FONDO MÁS ALTO */
     body.figuras-grandes .marco-sobres,
     body.figuras-chicas .marco-sobres {
         position: relative !important;
-        min-height: 100svh !important;
+        min-height: 1250px !important;
         overflow: visible !important;
     }
 
@@ -2796,55 +2795,52 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         top: 0 !important;
         left: 0 !important;
         width: 100% !important;
-        height: 100% !important;
+        height: 1250px !important;
         object-fit: fill !important;
         object-position: center top !important;
     }
 
-    /* Título: un poquito más abajo y más grande */
+    /* TÍTULO */
     body.figuras-grandes .titulo-nuestras-figuras,
     body.figuras-chicas .titulo-nuestras-figuras {
-        position: absolute !important;
-        top: 105px !important;
-        padding-top: 0 !important;
-        font-size: 2rem !important;
-        line-height: 1.2 !important;
-        width: 100% !important;
-        text-align: center !important;
+        top: 205px !important;
+        padding: 0 !important;
+        font-size: 2.1rem !important;
         z-index: 60 !important;
     }
 
-    /* Tarjetas: subirlas y achicarlas */
+    /* TARJETAS MÁS ABAJO Y MÁS PEQUEÑAS */
     body.figuras-grandes .catalogo-figuras,
     body.figuras-chicas .catalogo-figuras {
         position: absolute !important;
-        top: 185px !important;
-        left: 7% !important;
-        width: 86% !important;
+        top: 285px !important;
+        left: 10% !important;
+        width: 80% !important;
         margin: 0 !important;
-        padding-bottom: 15px !important;
-        gap: 9px !important;
+        padding-bottom: 20px !important;
+        gap: 8px !important;
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        z-index: 5 !important;
     }
 
     body.figuras-grandes .catalogo-figuras .figura,
     body.figuras-chicas .catalogo-figuras .figura {
         padding: 5px !important;
-        min-width: 0 !important;
         aspect-ratio: 1 / 1 !important;
     }
 
     body.figuras-grandes .catalogo-figuras .figura img,
     body.figuras-chicas .catalogo-figuras .figura img {
+        height: 85px !important;
         width: 100% !important;
-        height: 95px !important;
         object-fit: contain !important;
     }
 
-    body.figuras-grandes .catalogo-figuras .figura h2,
-    body.figuras-chicas .catalogo-figuras .figura h2 {
-        font-size: 0.95rem !important;
-        margin: 5px 0 2px !important;
+    /* BOTONES DEL MENÚ: SIN ROJO */
+    body.figuras-grandes .zona-menu-superior a,
+    body.figuras-chicas .zona-menu-superior a {
+        background: transparent !important;
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
     }
 }
