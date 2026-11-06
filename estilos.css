@@ -2951,7 +2951,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     body.figuras-grandes .fondo-navidad,
     body.figuras-chicas .fondo-navidad {
         width: 100% !important;
-        height: 100% !important;
+        height: 101% !important;
         object-fit: fill !important;
         object-position: center top !important;
     }
@@ -2960,15 +2960,14 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     body.figuras-grandes .catalogo-figuras,
     body.figuras-chicas .catalogo-figuras {
         margin-top: 14px !important;
-        transform: translateY(-14px) !important;
+        transform: translateY(-16px) !important;
     }
 
     /* Comprimir las tarjetas verticalmente */
     body.figuras-grandes .catalogo-figuras .figura,
     body.figuras-chicas .catalogo-figuras .figura {
-        padding-top: 5px !important;
-        padding-bottom: 5px !important;
+        padding-top: 4px !important;
+        padding-bottom: 4px !important;
     }
 
-    /* Mantener los botones rojos de prueba */
 }
