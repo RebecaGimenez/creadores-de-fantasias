@@ -2289,21 +2289,18 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
 
 /* ==========================================
-   INICIO - CELULAR (v3): BAJAR CONTACTO,
-   SUBIR Y ACHICAR IMAGEN Y FRASE
+   INICIO - CELULAR (v4): ALINEAR MENÚ
+   Y BAJAR PRESENTACIÓN SIN CAMBIAR COMPUTADORA
 ========================================== */
 
 @media (max-width: 700px) {
-
-    /* Subimos un poco más la presentación (antes 200px) */
     html body.pagina-inicio.pagina-fondo-navidad main .presentacion {
-        padding-top: 165px !important;
+        padding-top: 235px !important;
         gap: 12px !important;
     }
 
-    /* Frase un poco más arriba */
     html body.pagina-inicio.pagina-fondo-navidad .presentacion-texto {
-        transform: translateY(0) !important;
+        transform: none !important;
         margin-top: 0 !important;
     }
 
@@ -2311,7 +2308,6 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         transform: translateY(5px) !important;
     }
 
-    /* Imagen más arriba y más chica (antes 82% / 280px) */
     html body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen {
         margin-top: 0 !important;
     }
@@ -2321,8 +2317,16 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         max-width: 220px !important;
     }
 
-    /* Botón "Contacto" un poco más abajo (antes 90px) */
+    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(n) {
+        left: 27% !important;
+        width: 46% !important;
+    }
+
+    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(2) {
+        top: 35px !important;
+    }
+
     html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(3) {
-        top: 105px !important;
+        top: 85px !important;
     }
 }
