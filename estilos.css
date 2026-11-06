@@ -2861,7 +2861,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     /* Título un poquito más abajo y más grande */
     body.figuras-grandes .titulo-nuestras-figuras,
     body.figuras-chicas .titulo-nuestras-figuras {
-        top: 115px !important;
+        top: 180px !important;
         font-size: 29px !important;
         padding-top: 0 !important;
     }
@@ -2877,7 +2877,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         margin: 0 auto !important;
         padding-bottom: 20px !important;
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        margin-top: 45px !important;    
+        margin-top: 49px !important;    
     }
 
     body.figuras-grandes .catalogo-figuras .figura,
