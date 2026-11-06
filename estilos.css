@@ -2221,18 +2221,18 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     /* Bajamos un poquito más las frases */
     body.pagina-inicio.pagina-fondo-navidad .presentacion-texto {
-        margin-top: 10px !important;
-        transform: translateY(15px) !important;
+        margin-top: 15px !important;
+        transform: translateY(20px) !important;
     }
 
     body.pagina-inicio.pagina-fondo-navidad .presentacion-texto p {
-        transform: translateY(15px) !important;
-        margin-bottom: 15px !important;
+        transform: translateY(18px) !important;
+        margin-bottom: 18px !important;
     }
 
     /* Agrandamos un poquito la imagen */
     body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen {
-        width: 95% !important;
+        width: 100% !important;
         margin-top: 12px !important;
     }
 
@@ -2254,5 +2254,33 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(3) {
         top: 70px !important;
+    }
+}
+
+
+/* ==========================================
+   INICIO - CELULAR: SUBIR PRESENTACIÓN Y
+   BAJAR/ENSANCHAR ÚLTIMOS DOS BOTONES
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* Subimos título, frases e imagen (antes 285px) */
+    body.pagina-inicio.pagina-fondo-navidad .presentacion {
+        padding-top: 235px !important;
+    }
+
+    /* Botón "Nuestras figuras": más abajo y más ancho */
+    body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(2) {
+        top: 42px !important;
+        left: 16% !important;
+        width: 68% !important;
+    }
+
+    /* Botón "Contacto": más abajo y más ancho */
+    body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(3) {
+        top: 82px !important;
+        left: 16% !important;
+        width: 68% !important;
     }
 }
