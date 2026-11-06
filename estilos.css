@@ -2785,7 +2785,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     body.figuras-grandes .marco-sobres,
     body.figuras-chicas .marco-sobres {
         position: relative !important;
-        min-height: 400px !important;
+        min-height: 100px !important;
         overflow: visible !important;
     }
 
