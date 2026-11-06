@@ -2286,3 +2286,43 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         height: 26px !important;
     }
 }
+
+
+/* ==========================================
+   INICIO - CELULAR (v3): BAJAR CONTACTO,
+   SUBIR Y ACHICAR IMAGEN Y FRASE
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* Subimos un poco más la presentación (antes 200px) */
+    html body.pagina-inicio.pagina-fondo-navidad main .presentacion {
+        padding-top: 165px !important;
+        gap: 12px !important;
+    }
+
+    /* Frase un poco más arriba */
+    html body.pagina-inicio.pagina-fondo-navidad .presentacion-texto {
+        transform: translateY(0) !important;
+        margin-top: 0 !important;
+    }
+
+    html body.pagina-inicio.pagina-fondo-navidad .presentacion-texto p {
+        transform: translateY(5px) !important;
+    }
+
+    /* Imagen más arriba y más chica (antes 82% / 280px) */
+    html body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen {
+        margin-top: 0 !important;
+    }
+
+    html body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
+        width: 65% !important;
+        max-width: 220px !important;
+    }
+
+    /* Botón "Contacto" un poco más abajo (antes 90px) */
+    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(3) {
+        top: 105px !important;
+    }
+}
