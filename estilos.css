@@ -2587,78 +2587,101 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     }
 
 }
-
 /* ==========================================
-   CONTACTOS - AJUSTES FINALES CELULAR
+   CONTACTOS - CORRECCIÓN CELULAR
 ========================================== */
 
 @media (max-width: 700px) {
 
-    /* FONDO: MISMA MEDIDA QUE INICIO Y PRODUCTOS */
+    /* FONDO: MISMA PROPORCIÓN QUE LAS OTRAS PÁGINAS */
     body.pagina-contacto .marco-sobres {
-        min-height: 100svh !important;
         position: relative !important;
+        min-height: 100svh !important;
+        overflow: hidden !important;
+        padding-bottom: 35px !important;
+    }
+
+    body.pagina-contacto .fondo-responsive {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 0 !important;
     }
 
     body.pagina-contacto .fondo-navidad {
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
+        display: block !important;
         width: 100% !important;
         height: 100% !important;
         object-fit: fill !important;
         object-position: center top !important;
     }
 
-    /* BAJAR TÍTULO, FRASE Y TARJETAS */
-    body.pagina-contacto .contacto {
-        padding-top: 140px !important;
+    /* CONTENIDO POR ENCIMA DEL FONDO */
+    body.pagina-contacto .encabezado-contacto,
+    body.pagina-contacto .opciones-contacto,
+    body.pagina-contacto .mensaje-final {
+        position: relative !important;
+        z-index: 2 !important;
     }
 
-    /* TÍTULO */
+    /* BAJAR TÍTULO Y FRASES */
+    body.pagina-contacto .encabezado-contacto {
+        margin-top: 215px !important;
+        padding: 0 12px !important;
+        text-align: center !important;
+    }
+
     body.pagina-contacto .encabezado-contacto h1 {
         font-size: 2.2rem !important;
-        margin-bottom: 12px !important;
+        line-height: 1.15 !important;
+        margin: 0 auto 15px !important;
     }
 
-    /* FRASE */
     body.pagina-contacto .encabezado-contacto p {
         font-size: 0.95rem !important;
         line-height: 1.4 !important;
-        margin: 8px auto !important;
-        padding: 0 8px !important;
+        margin: 10px auto !important;
     }
 
-    /* TARJETAS MÁS CHICAS */
+    /* TARJETAS MÁS CHICAS Y MÁS ABAJO */
     body.pagina-contacto .opciones-contacto {
-        width: 84% !important;
-        margin: 22px auto !important;
-        gap: 12px !important;
+        width: 82% !important;
+        margin: 28px auto 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 13px !important;
     }
 
-    body.pagina-contacto .opciones-contacto .tarjeta-contacto {
+    body.pagina-contacto .tarjeta-contacto {
         width: 100% !important;
-        flex-basis: 100% !important;
-        padding: 12px 14px !important;
+        flex: none !important;
+        box-sizing: border-box !important;
+        padding: 13px 14px !important;
+        margin: 0 !important;
     }
 
-    /* TÍTULOS DE LAS TARJETAS */
     body.pagina-contacto .tarjeta-contacto h2 {
         font-size: 1.2rem !important;
-        margin: 5px 0 7px !important;
+        margin: 3px 0 7px !important;
     }
 
-    /* TEXTO DE LAS TARJETAS */
     body.pagina-contacto .tarjeta-contacto p {
         font-size: 0.85rem !important;
         line-height: 1.35 !important;
-        margin-bottom: 10px !important;
+        margin: 0 0 10px !important;
     }
 
-    /* BOTONES */
-    body.pagina-contacto .tarjeta-contacto .boton-contacto {
-        padding: 8px 16px !important;
+    body.pagina-contacto .boton-contacto {
+        padding: 8px 14px !important;
         font-size: 0.85rem !important;
     }
 
+    /* MENSAJE FINAL */
+    body.pagina-contacto .mensaje-final {
+        margin: 20px 12px !important;
+        text-align: center !important;
+        font-size: 0.9rem !important;
+    }
 }
