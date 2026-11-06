@@ -2851,17 +2851,11 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
 @media (max-width: 700px) {
 
-    /* Fondo más estirado para que entre todo */
-    body.figuras-grandes .fondo-navidad,
-    body.figuras-chicas .fondo-navidad {
-        height: calc(100% + 180px) !important;
-        object-fit: fill !important;
-    }
 
     /* Título un poquito más abajo y más grande */
     body.figuras-grandes .titulo-nuestras-figuras,
     body.figuras-chicas .titulo-nuestras-figuras {
-        top: 260px !important;
+        top: 230px !important;
         font-size: 29px !important;
         padding-top: 0 !important;
     }
@@ -2877,7 +2871,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         margin: 0 auto !important;
         padding-bottom: 20px !important;
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        margin-top: 53px !important;    
+        margin-top: 50px !important;    
     }
 
     body.figuras-grandes .catalogo-figuras .figura,
@@ -2918,8 +2912,8 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     /* Fondo un poquito más chico, sin comprimirlo */
     body.figuras-grandes .fondo-navidad,
     body.figuras-chicas .fondo-navidad {
-        width: 100% !important;
-        height: 94% !important;
+        width: 101% !important;
+        height: 99% !important;
         object-fit: contain !important;
         object-position: center top !important;
     }
@@ -2933,16 +2927,16 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     body.figuras-grandes .zona-menu-superior a:nth-child(1),
     body.figuras-chicas .zona-menu-superior a:nth-child(1) {
-        top: 82px !important;
+        top: 80px !important;
     }
 
     body.figuras-grandes .zona-menu-superior a:nth-child(2),
     body.figuras-chicas .zona-menu-superior a:nth-child(2) {
-        top: 125px !important;
+        top: 122px !important;
     }
 
     body.figuras-grandes .zona-menu-superior a:nth-child(3),
     body.figuras-chicas .zona-menu-superior a:nth-child(3) {
-        top: 168px !important;
+        top: 164px !important;
     }
 }
