@@ -2913,7 +2913,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     body.figuras-grandes .fondo-navidad,
     body.figuras-chicas .fondo-navidad {
         width: 101% !important;
-        height: 120% !important;
+        height: 80% !important;
         object-fit: contain !important;
         object-position: center top !important;
     }
