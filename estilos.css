@@ -2287,62 +2287,107 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     }
 }
 
-
 /* ==========================================
-   INICIO - CELULAR (v4): ALINEAR MENÚ
-   Y BAJAR PRESENTACIÓN SIN CAMBIAR COMPUTADORA
-========================================== */
-
-@media (max-width: 700px) {
-    html body.pagina-inicio.pagina-fondo-navidad main .presentacion {
-        padding-top: 235px !important;
-        gap: 12px !important;
-    }
-
-    html body.pagina-inicio.pagina-fondo-navidad .presentacion-texto {
-        transform: none !important;
-        margin-top: 0 !important;
-    }
-
-    html body.pagina-inicio.pagina-fondo-navidad .presentacion-texto p {
-        transform: translateY(5px) !important;
-    }
-
-    html body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen {
-        margin-top: 0 !important;
-    }
-
-    html body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
-        width: 65% !important;
-        max-width: 220px !important;
-    }
-
-    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(n) {
-        left: 27% !important;
-        width: 46% !important;
-    }
-
-    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(2) {
-        top: 35px !important;
-    }
-
-    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(3) {
-        top: 85px !important;
-    }
-}
-
-/* ==========================================
-   AJUSTES CELULAR: CONTACTO Y PRODUCTOS
+   AJUSTES DEFINITIVOS CELULAR: INICIO Y PRODUCTOS
    ========================================== */
 
 @media (max-width: 700px) {
 
-    /* CONTACTO: Subir 2px el botón Inicio */
-    body.pagina-contacto .zona-menu-superior a:nth-child(1) {
-        top: -2px !important;
+    /* --- INICIO: FONDO CON LA MISMA MEDIDA QUE PRODUCTOS --- */
+    body.pagina-inicio.pagina-fondo-navidad .marco-pagina {
+        min-height: 100svh !important;
+        position: relative !important;
+        overflow-x: hidden !important;
     }
 
-    /* PRODUCTOS: Fondo completo de pantalla */
+    body.pagina-inicio.pagina-fondo-navidad .fondo-navidad1 {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: fill !important;
+        object-position: center top !important;
+    }
+
+    /* INICIO: Menú ajustado a los botones de madera */
+    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 210px !important;
+    }
+
+    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(n) {
+        position: absolute !important;
+        left: 19% !important;
+        width: 62% !important;
+        right: auto !important;
+    }
+
+    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(1) {
+        top: 78px !important;
+        height: 35px !important;
+    }
+
+    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(2) {
+        top: 121px !important;
+        height: 35px !important;
+    }
+
+    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(3) {
+        top: 164px !important;
+        height: 35px !important;
+    }
+
+    /* INICIO: Presentación ajustada para no solaparse con botones ni guirnalda */
+    body.pagina-inicio.pagina-fondo-navidad .presentacion {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding-top: 215px !important;
+        padding-bottom: 20px !important;
+        gap: 8px !important;
+    }
+
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-texto {
+        margin: 0 auto !important;
+        transform: none !important;
+    }
+
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-texto h1 {
+        font-size: 2.1rem !important;
+        line-height: 1.1 !important;
+        margin: 0 auto 6px !important;
+        text-align: center !important;
+    }
+
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-texto p {
+        font-size: 0.88rem !important;
+        line-height: 1.35 !important;
+        margin: 0 auto 6px !important;
+        padding: 0 6px !important;
+        transform: none !important;
+        text-align: center !important;
+    }
+
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen {
+        margin-top: 4px !important;
+    }
+
+    body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
+        width: 50% !important;
+        max-width: 170px !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1 !important;
+        margin: 0 auto !important;
+        display: block !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+    }
+
+    /* --- PRODUCTOS --- */
     body.pagina-productos-sobres.pagina-categorias .marco-sobres {
         min-height: 100svh !important;
         position: relative !important;
@@ -2358,35 +2403,44 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         object-position: center top !important;
     }
 
-    /* PRODUCTOS: Menú centrado sobre los botones de madera */
+    /* PRODUCTOS: Menú con botones calzados */
     html body.pagina-productos-sobres .zona-menu-superior {
         position: absolute !important;
         top: 0 !important;
         left: 0 !important;
         width: 100% !important;
-        height: 180px !important;
-        transform: none !important;
+        height: 210px !important;
     }
 
     html body.pagina-productos-sobres .zona-menu-superior a:nth-child(n) {
         position: absolute !important;
-        left: 26% !important;
-        width: 48% !important;
-        height: 25px !important;
+        left: 19% !important;
+        width: 62% !important;
         right: auto !important;
     }
 
-    html body.pagina-productos-sobres .zona-menu-superior a:nth-child(1) { top: 78px !important; }
-    html body.pagina-productos-sobres .zona-menu-superior a:nth-child(2) { top: 114px !important; }
-    html body.pagina-productos-sobres .zona-menu-superior a:nth-child(3) { top: 147px !important; }
+    html body.pagina-productos-sobres .zona-menu-superior a:nth-child(1) {
+        top: 78px !important;
+        height: 35px !important;
+    }
 
-      /* PRODUCTOS: Título bajado debajo del botón de Contacto */
+    html body.pagina-productos-sobres .zona-menu-superior a:nth-child(2) {
+        top: 121px !important;
+        height: 35px !important;
+    }
+
+    html body.pagina-productos-sobres .zona-menu-superior a:nth-child(3) {
+        top: 164px !important;
+        height: 35px !important;
+    }
+
+    /* PRODUCTOS: Título más grande */
     html body.pagina-productos-sobres.pagina-categorias .titulo-nuestras-figuras {
         position: absolute !important;
-        top: 218px !important;
+        top: 215px !important;
         padding-top: 0 !important;
         margin: 0 !important;
-        font-size: 1.9rem !important;
+        font-size: 2.3rem !important;
         line-height: 1.1 !important;
         z-index: 20 !important;
         text-align: center !important;
@@ -2394,10 +2448,10 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         left: 0 !important;
     }
 
-    /* PRODUCTOS: Tarjetas bajadas con espacio prolijo */
+    /* PRODUCTOS: Tarjetas bajadas */
     html body.pagina-productos-sobres.pagina-categorias .tarjetas-productos {
         position: absolute !important;
-        top: 272px !important;
+        top: 285px !important;
         left: 11% !important;
         width: 78% !important;
         margin: 0 !important;
@@ -2429,21 +2483,26 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         font-size: 0.85rem !important;
     }
 
-    /* PRODUCTOS: Botón carrito abajo a la izquierda (firme y sin moverse al tocarlo) */
+    /* PRODUCTOS: Carrito flotante fijo abajo a la derecha */
     html body.pagina-categorias .boton-carrito,
     html body.pagina-categorias .boton-carrito:hover,
     html body.pagina-categorias .boton-carrito:active {
-        position: absolute !important;
-        top: 556px !important;
-        left: 11% !important;
-        bottom: auto !important;
-        right: auto !important;
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 18px !important;
+        left: auto !important;
+        top: auto !important;
         transform: none !important;
-        transition: none !important;
+        transition: transform 0.2s ease !important;
         margin: 0 !important;
-        padding: 7px 18px !important;
-        font-size: 0.9rem !important;
-        z-index: 25 !important;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3) !important;
+        padding: 10px 18px !important;
+        font-size: 0.95rem !important;
+        z-index: 9999 !important;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    /* CONTACTO: Ajuste fino de botón Inicio */
+    body.pagina-contacto .zona-menu-superior a:nth-child(1) {
+        top: -2px !important;
     }
 }
