@@ -2795,7 +2795,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         top: 0 !important;
         left: 0 !important;
         width: 100% !important;
-        height: 1250px !important;
+        height: 1000px !important;
         object-fit: fill !important;
         object-position: center top !important;
     }
@@ -2842,5 +2842,68 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         outline: none !important;
         border: none !important;
         box-shadow: none !important;
+    }
+}
+
+/* ==========================================
+   FIGURAS GRANDES Y CHICAS - AJUSTE FINAL
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* Fondo más estirado para que entre todo */
+    body.figuras-grandes .fondo-navidad,
+    body.figuras-chicas .fondo-navidad {
+        height: calc(100% + 180px) !important;
+        object-fit: fill !important;
+    }
+
+    /* Título un poquito más abajo y más grande */
+    body.figuras-grandes .titulo-nuestras-figuras,
+    body.figuras-chicas .titulo-nuestras-figuras {
+        top: 115px !important;
+        font-size: 29px !important;
+        padding-top: 0 !important;
+    }
+
+    /* Tarjetas más angostas, menos altas y más abajo */
+    body.figuras-grandes .catalogo-figuras,
+    body.figuras-chicas .catalogo-figuras {
+        position: absolute !important;
+        top: 260px !important;
+        left: 10% !important;
+        width: 80% !important;
+        gap: 9px !important;
+        margin: 0 auto !important;
+        padding-bottom: 20px !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura,
+    body.figuras-chicas .catalogo-figuras .figura {
+        padding: 5px !important;
+        aspect-ratio: 1 / 0.85 !important;
+        min-height: 0 !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura img,
+    body.figuras-chicas .catalogo-figuras .figura img {
+        width: 100% !important;
+        height: 90px !important;
+        object-fit: contain !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura h2,
+    body.figuras-chicas .catalogo-figuras .figura h2 {
+        font-size: 0.9rem !important;
+        margin: 5px 0 2px !important;
+    }
+
+    /* Quitar marcas rojas de los botones invisibles */
+    body.figuras-grandes .zona-menu-superior a,
+    body.figuras-chicas .zona-menu-superior a {
+        background: transparent !important;
+        outline: none !important;
+        border: none !important;
     }
 }
