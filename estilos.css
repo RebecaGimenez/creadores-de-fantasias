@@ -2259,28 +2259,30 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
 
 /* ==========================================
-   INICIO - CELULAR: SUBIR PRESENTACIÓN Y
-   BAJAR/ENSANCHAR ÚLTIMOS DOS BOTONES
+   INICIO - CELULAR (v2): SUBIR PRESENTACIÓN,
+   BAJAR Y ENSANCHAR ÚLTIMOS DOS BOTONES
 ========================================== */
 
 @media (max-width: 700px) {
 
     /* Subimos título, frases e imagen (antes 285px) */
-    body.pagina-inicio.pagina-fondo-navidad .presentacion {
-        padding-top: 235px !important;
+    html body.pagina-inicio.pagina-fondo-navidad main .presentacion {
+        padding-top: 200px !important;
     }
 
     /* Botón "Nuestras figuras": más abajo y más ancho */
-    body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(2) {
-        top: 42px !important;
-        left: 16% !important;
-        width: 68% !important;
+    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(2) {
+        top: 45px !important;
+        left: 12% !important;
+        width: 76% !important;
+        height: 26px !important;
     }
 
     /* Botón "Contacto": más abajo y más ancho */
-    body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(3) {
-        top: 82px !important;
-        left: 16% !important;
-        width: 68% !important;
+    html body.pagina-inicio.pagina-fondo-navidad .zona-menu-superior a:nth-child(3) {
+        top: 90px !important;
+        left: 12% !important;
+        width: 76% !important;
+        height: 26px !important;
     }
 }
