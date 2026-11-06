@@ -2627,7 +2627,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     /* BAJAR TÍTULO Y FRASES */
     body.pagina-contacto .encabezado-contacto {
-        margin-top: 215px !important;
+        margin-top: 230px !important;
         padding: 0 12px !important;
         text-align: center !important;
     }
@@ -2646,8 +2646,8 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     /* TARJETAS MÁS CHICAS Y MÁS ABAJO */
     body.pagina-contacto .opciones-contacto {
-        width: 82% !important;
-        margin: 28px auto 0 !important;
+        width: 78% !important;
+        margin: 30px auto 0 !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
