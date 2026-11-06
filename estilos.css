@@ -2913,7 +2913,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     body.figuras-grandes .fondo-navidad,
     body.figuras-chicas .fondo-navidad {
         width: 101% !important;
-        height: 80% !important;
+        height: 90% !important;
         object-fit: contain !important;
         object-position: center top !important;
     }
@@ -2939,4 +2939,36 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     body.figuras-chicas .zona-menu-superior a:nth-child(3) {
         top: 164px !important;
     }
+}
+
+/* ==========================================
+   FIGURAS GRANDES Y CHICAS - AJUSTE FINO
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* Fondo un poquito más largo */
+    body.figuras-grandes .fondo-navidad,
+    body.figuras-chicas .fondo-navidad {
+        width: 100% !important;
+        height: 98% !important;
+        object-fit: fill !important;
+        object-position: center top !important;
+    }
+
+    /* Subir un poquito las tarjetas */
+    body.figuras-grandes .catalogo-figuras,
+    body.figuras-chicas .catalogo-figuras {
+        margin-top: 12px !important;
+        transform: translateY(-12px) !important;
+    }
+
+    /* Comprimir las tarjetas verticalmente */
+    body.figuras-grandes .catalogo-figuras .figura,
+    body.figuras-chicas .catalogo-figuras .figura {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+
+    /* Mantener los botones rojos de prueba */
 }
