@@ -2775,6 +2775,75 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         transform: translateY(25px) !important;
     }
 }
+/* ==========================================
+   FIGURAS GRANDES Y CHICAS - AJUSTE FINAL
+========================================== */
+
+@media (max-width: 700px) {
+
+    body.figuras-grandes .marco-sobres,
+    body.figuras-chicas .marco-sobres {
+        position: relative !important;
+        min-height: 100svh !important;
+        overflow: visible !important;
+    }
+
+    body.figuras-grandes .fondo-navidad,
+    body.figuras-chicas .fondo-navidad {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+        object-position: center top !important;
+    }
+   
+
+    /* TÍTULO */
+    body.figuras-grandes .titulo-nuestras-figuras,
+    body.figuras-chicas .titulo-nuestras-figuras {
+        top: 115px !important;
+        padding: 0 !important;
+        font-size: 2.1rem !important;
+        z-index: 60 !important;
+    }
+
+    /* TARJETAS MÁS ABAJO Y MÁS PEQUEÑAS */
+    body.figuras-grandes .catalogo-figuras,
+    body.figuras-chicas .catalogo-figuras {
+        position: absolute !important;
+        top: 285px !important;
+        left: 10% !important;
+        width: 80% !important;
+        margin: 0 !important;
+        padding-bottom: 20px !important;
+        gap: 8px !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura,
+    body.figuras-chicas .catalogo-figuras .figura {
+        padding: 5px !important;
+        aspect-ratio: 1 / 1 !important;
+    }
+
+    body.figuras-grandes .catalogo-figuras .figura img,
+    body.figuras-chicas .catalogo-figuras .figura img {
+        height: 85px !important;
+        width: 100% !important;
+        object-fit: contain !important;
+    }
+
+    /* BOTONES DEL MENÚ: SIN ROJO */
+    body.figuras-grandes .zona-menu-superior a,
+    body.figuras-chicas .zona-menu-superior a {
+        background: transparent !important;
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
 
 /* ==========================================
    FIGURAS GRANDES Y CHICAS - AJUSTE FINAL
@@ -2902,4 +2971,3 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     }
 
 }
-
