@@ -2912,8 +2912,8 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     /* Fondo un poquito más chico, sin comprimirlo */
     body.figuras-grandes .fondo-navidad,
     body.figuras-chicas .fondo-navidad {
-        width: 101% !important;
-        height: 90% !important;
+        width: 95% !important;
+        height: 88% !important;
         object-fit: contain !important;
         object-position: center top !important;
     }
@@ -2932,12 +2932,12 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     body.figuras-grandes .zona-menu-superior a:nth-child(2),
     body.figuras-chicas .zona-menu-superior a:nth-child(2) {
-        top: 124px !important;
+        top: 125px !important;
     }
 
     body.figuras-grandes .zona-menu-superior a:nth-child(3),
     body.figuras-chicas .zona-menu-superior a:nth-child(3) {
-        top: 170px !important;
+        top: 175px !important;
     }
 }
 
