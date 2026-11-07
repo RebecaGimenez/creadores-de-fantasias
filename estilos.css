@@ -3017,3 +3017,17 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     line-height: 1 !important;
     cursor: pointer !important;
 }
+
+@media (max-width: 700px) {
+
+    /* Subir un poquito la imagen de presentación */
+    body.pagina-inicio .presentacion-imagen {
+        transform: translateY(-10px) !important;
+    }
+
+    /* Bajar el botón de Contactos en Nuestras figuras */
+    body.pagina-nuestras-figuras .boton-contactos {
+        transform: translateY(8px) !important;
+    }
+
+}
