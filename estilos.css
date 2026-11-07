@@ -2937,7 +2937,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     body.figuras-grandes .zona-menu-superior a:nth-child(3),
     body.figuras-chicas .zona-menu-superior a:nth-child(3) {
-        top: 175px !important;
+        top: 180px !important;
     }
 }
 
@@ -2991,8 +2991,8 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     /* IMAGEN REDONDA */
     body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
-        width: 88% !important;
-        max-width: 300px !important;
+        width: 85% !important;
+        max-width: 280px !important;
     }
 }
 
