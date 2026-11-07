@@ -188,7 +188,7 @@ header {
 }
 
 .presentacion-imagen img {
-    width: 100%;
+    width: 110%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;
@@ -2893,15 +2893,4 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         padding-bottom: 4px !important;
     }
 
-}
-
-/* BOTONES TRANSPARENTES MÁS ANGOSTOS */
-@media (max-width: 700px) {
-
-    body.figuras-grandes .zona-menu-superior a,
-    body.figuras-chicas .zona-menu-superior a {
-        left: 27% !important;
-        width: 46% !important;
-        height: 30px !important;
-    }
 }
