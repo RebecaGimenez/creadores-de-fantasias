@@ -1971,8 +1971,8 @@ body.pagina-contacto .encabezado-contacto h1 {
         height: 28px;
         display: block;
         pointer-events: auto;
-        background: rgba(255, 0, 0, 0.35);
-        outline: 1px solid red;
+        background: transparent;
+        outline: 1px solid transparent;
     }
 
     /* Inicio */
@@ -2855,7 +2855,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     /* Título un poquito más abajo y más grande */
     body.figuras-grandes .titulo-nuestras-figuras,
     body.figuras-chicas .titulo-nuestras-figuras {
-        top: 210px !important;
+        top: 215px !important;
         font-size: 29px !important;
         padding-top: 0 !important;
     }
@@ -2937,7 +2937,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     body.figuras-grandes .zona-menu-superior a:nth-child(3),
     body.figuras-chicas .zona-menu-superior a:nth-child(3) {
-        top: 168px !important;
+        top: 170px !important;
     }
 }
 
