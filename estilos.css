@@ -2921,8 +2921,8 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     /* Bajar un poquito los botones */
     body.figuras-grandes .zona-menu-superior a,
     body.figuras-chicas .zona-menu-superior a {
-        background: rgba(255, 0, 0, 0.35) !important;
-        outline: 1px solid red !important;
+        background: transparent!important;
+        outline: 1px solid transparent !important;
     }
 
     body.figuras-grandes .zona-menu-superior a:nth-child(1),
@@ -2992,7 +2992,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     /* IMAGEN REDONDA */
     body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
         width: 90% !important;
-        max-width: 220px !important;
+        max-width: 205px !important;
     }
 }
 
