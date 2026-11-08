@@ -2772,7 +2772,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
 
     /* Imagen redonda */
     body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen {
-        transform: translateY(-10px) !important;
+        transform: translateY(-5px) !important;
     }
 }
 /* ==========================================
@@ -3009,7 +3009,7 @@ body.pagina-inicio.pagina-fondo-navidad .presentacion-imagen img {
     width: 42px !important;
     height: 42px !important;
     padding: 0 !important;
-    background: #a90000 !important;
+    background: #ec3333 !important;
     color: white !important;
     border: 2px solid #d6a94e !important;
     border-radius: 50% !important;
