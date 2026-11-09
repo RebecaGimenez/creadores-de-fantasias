@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "trineo_mediano.jpg": {
             descripcion: "Trineo reforzado, con capacidad para soportar aproximadamente 80 kg. Ideal para uso interior y exterior, y para que niños y adultos disfruten de una foto navideña.",
             medidas: "Trineo: 1,40 × 0,90 × 0,60 m / Renos: 1,00 × 1,03 m cada uno",
-            materiales: MATERIAL_GENERAL + TELA_LAME "en los laterales.",
+            materiales: MATERIAL_GENERAL + " Lleva tela tratada para evitar filtraciones, en los laterales.",
             luces: "Luz de neón."
         },
 
