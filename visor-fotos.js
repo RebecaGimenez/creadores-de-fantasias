@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         'Estructura de hierro tubular de 15 x 15 x 1.6 mm, reforzada en el medio con planchuela de 1/2" x 1/8", soldada y pintada.';
 
     const TELA_LAME =
-        "Tela lamé bouclé tratada para resistir el agua.";
+        "Tela tratada para resistir filtraciones.";
 
     // Información de cada figura según su archivo de imagen
     const datosFiguras = {
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         "estrella.jpg": {
             descripcion: "Estrella facetada decorativa, apta para uso interior y exterior.",
-            medidas: "0,70 × 0,74 m",
+            medidas: "0,70 × 0,70 m",
             materiales: MATERIAL_GENERAL,
             luces: "Manguera de hilo incandescente."
         },
